@@ -1,10 +1,10 @@
-<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+<nav class="navbar navbar-expand-md navbar-light bg-light">
   <a class="navbar-brand" href="#">SALBERO</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleNavbar()">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+  <div class="collapse navbar-collapse" id="navbarNavDropdown" [ngClass]="{ 'show': navbarOpen }">
     <ul class="navbar-nav ml-auto">
 
       <li class="nav-item"><a class="nav-link" routerLink="">Acasa</a></li>
@@ -16,9 +16,15 @@
           Produse
         </a>
         <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Garduri</a>
+          <a class="dropdown-item" href="#">Gard</a>
+          <a class="dropdown-item" href="#">Spalieri</a>
+          <a class="dropdown-item" href="#">Boltari</a>
           <a class="dropdown-item" href="#">Pavele</a>
-          <a class="dropdown-item" href="#">Droguri</a>
+          <a class="dropdown-item" href="#">Tigla</a>
+          <a class="dropdown-item" href="#">Caciuli si Coame gard</a>
+          <a class="dropdown-item" href="#">Fantana Arteziana</a>
+          <a class="dropdown-item" href="#">Piatra Decorativa</a>
+          <a class="dropdown-item" href="#">Jardiniera</a>
         </div>
       </li>
 
