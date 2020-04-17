@@ -19,6 +19,10 @@
 .navbar-nav{
     margin-left: 8%;
 }
+#nav-dropdown{
+    background-color: #0a66c2;
+    border: none;
+}
 
 #phone{
     text-decoration: none;
