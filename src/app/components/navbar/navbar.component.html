@@ -3,15 +3,16 @@
   <form class="form-inline d-flex justify-content-center md-form form-sm mt-0" id="search-form">
     <input class="form-control form-control-sm ml-3 w-75" id="search" type="text" placeholder="Search"
            aria-label="Search">
-    <fa-icon [icon]="faSearch" id="search-icon"></fa-icon>
+<!--    <fa-icon [icon]="faSearch" id="search-icon"></fa-icon>-->
   </form>
   <a id="phone" href="tel:+40729352586">+40 729 352 586</a>
 </div>
 <nav class="navbar navbar-expand-md navbar-light navbar-custom">
-  <button class="navbar-toggle ml-auto navbar-dark" id="nav-dropdown" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+  <button class="navbar-toggler ml-auto navbar-dark" id="nav-dropdown" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
           aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleNavbar()">
-    Meniu  <span class="navbar-toggler-icon"></span>
+    <span class="navbar-toggler-icon"></span>
   </button>
+
   <div class="collapse navbar-collapse" id="navbarNavDropdown" [ngClass]="{ 'show': navbarOpen }">
     <ul class="navbar-nav">
 
