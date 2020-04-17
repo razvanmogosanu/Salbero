@@ -4,7 +4,7 @@
 }
 
 .navbar-light li a{
-    color: black; /*#242424;*/
+    color: white; /*#242424;*/
     font-weight: 400;
 }
 
@@ -22,6 +22,12 @@
 #nav-dropdown{
     background-color: #0a66c2;
     border: none;
+    color: #e6e6e6;
+}
+
+#navbarNavDropdown{
+    background-color: #0a66c2; /*small screen menu, make this "white", if color=black*/
+    text-align: right;
 }
 
 #phone{
