@@ -1,14 +1,21 @@
-<nav class="navbar navbar-expand-md navbar-light bg-light">
-  <a class="navbar-brand" href="#">SALBERO</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+<div class="navbar">
+  <a class="navbar-brand" style="color:black;" href="#">SALBERO</a>
+  <form class="form-inline d-flex justify-content-center md-form form-sm mt-0" id="search-form">
+    <input class="form-control form-control-sm ml-3 w-75" id="search" type="text" placeholder="Search"
+           aria-label="Search">
+    <fa-icon [icon]="faSearch" id="search-icon"></fa-icon>
+  </form>
+  <a id="phone" href="tel:+40729352586">+40 729 352 586</a>
+</div>
+<nav class="navbar navbar-expand-md navbar-light navbar-custom">
+  <button class="navbar-toggle ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
           aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleNavbar()">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavDropdown" [ngClass]="{ 'show': navbarOpen }">
-    <ul class="navbar-nav ml-auto">
+    <ul class="navbar-nav">
 
       <li class="nav-item"><a class="nav-link" routerLink="">Acasa</a></li>
-
 
       <li ngbDropdown class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
@@ -16,21 +23,20 @@
           Produse
         </a>
         <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Gard</a>
-          <a class="dropdown-item" href="#">Spalieri</a>
-          <a class="dropdown-item" href="#">Boltari</a>
-          <a class="dropdown-item" href="#">Pavele</a>
-          <a class="dropdown-item" href="#">Tigla</a>
-          <a class="dropdown-item" href="#">Caciuli si Coame gard</a>
-          <a class="dropdown-item" href="#">Fantana Arteziana</a>
-          <a class="dropdown-item" href="#">Piatra Decorativa</a>
-          <a class="dropdown-item" href="#">Jardiniera</a>
+          <a class="dropdown-item" style="color: black; font-weight: 300"  href="#">Gard</a>
+          <a class="dropdown-item" style="color: black; font-weight: 300" href="#">Spalieri</a>
+          <a class="dropdown-item" style="color: black; font-weight: 300" href="#">Boltari</a>
+          <a class="dropdown-item" style="color: black; font-weight: 300" href="#">Pavele</a>
+          <a class="dropdown-item" style="color: black; font-weight: 300" href="#">Tigla</a>
+          <a class="dropdown-item" style="color: black; font-weight: 300" href="#">Caciuli si Coame gard</a>
+          <a class="dropdown-item" style="color: black; font-weight: 300" href="#">Fantana Arteziana</a>
+          <a class="dropdown-item" style="color: black; font-weight: 300" href="#">Piatra Decorativa</a>
+          <a class="dropdown-item" style="color: black; font-weight: 300" href="#">Jardiniera</a>
         </div>
       </li>
 
       <li class="nav-item"><a class="nav-link" routerLink="despre-noi">Despre noi</a></li>
       <li class="nav-item"><a class="nav-link" routerLink="contact">Contact</a></li>
-
     </ul>
   </div>
 </nav>

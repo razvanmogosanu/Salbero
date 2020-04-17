@@ -1,5 +1,47 @@
-.navbar-light li a{
-    color: #242424;
-    font-weight: 600;
+.navbar{
+    height: 2.5em;
+    margin-top: 1.2em;
 }
 
+.navbar-light li a{
+    color: black; /*#242424;*/
+    font-weight: 400;
+}
+
+.navbar-custom{
+    background-color: #0a66c2;/*#0082E6 - lighter*/
+}
+
+.navbar-collapse{
+    padding-right: 10%;
+}
+
+.navbar-nav{
+    margin-left: 8%;
+}
+
+#phone{
+    text-decoration: none;
+    color: #0a66c2;
+}
+
+/*Search box*/
+#search-form{
+    /*width: 30%;*/
+    /*height: 140%;*/
+    overflow: hidden;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+#search{
+    /*width: 70%;*/
+    /*height: 90%;*/
+    outline: 0;
+    color: lightgray;
+    border: 1px;
+    /*padding-left: 20%;*/
+    /*margin-top: 1%;*/
+}
+#search-icon{
+    float: right;
+}
