@@ -9,7 +9,7 @@
 }
 
 .navbar-custom{
-    background-color: #0a66c2;/*#0082E6 - lighter*/
+    background-color: #0082E6 ;/*#0082E6 - not lighter*/
 
 }
 
@@ -23,20 +23,20 @@
 /*------DROPDOWN HERE-------*/
 #nav-dropdown{
     margin-top: -1.2%;
-    background-color: #0a66c2;
+    background-color: #0082E6;
     border: none;
     outline: 0;
 }
 
 #navbarNavDropdown{
-    background-color: #0a66c2; /*small screen menu, make this "white", if color=black*/
+    background-color: #0082E6; /*small screen menu, make this "white", if color=black*/
     text-align: right;
 }
 
 
 #phone{
     text-decoration: none;
-    color: #0a66c2;
+    color: #0082E6;
     float:right;
     margin-right: 5%;
 }
@@ -55,7 +55,7 @@ body{
 
 .searchTerm {
     width: 100%;
-    border: 1px solid #0a66c2;
+    border: 1px solid #0082E6;
     border-right: none;
     padding: 5px;
     border-radius: 5px 0 0 5px;
@@ -69,8 +69,8 @@ body{
 
 .searchButton {
     width: 12%;
-    border: 1px solid #0a66c2;
-    background: #0a66c2;
+    border: 1px solid #0082E6;
+    background: #0082E6;
     text-align: center;
     color: #fff;
     border-radius: 0 5px 5px 0 ;
