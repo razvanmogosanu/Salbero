@@ -3,6 +3,11 @@
     margin-top: 1.2em;
 }
 
+.navbar-brand{
+    color: black;
+    margin-left: 8%;
+}
+
 .navbar-light li a{
     color: white; /*#242424;*/
     font-weight: 400;
@@ -10,7 +15,6 @@
 
 .navbar-custom{
     background-color: #0082E6 ;/*#0082E6 - not lighter*/
-
 }
 
 .navbar-collapse{
@@ -37,20 +41,24 @@
 #phone{
     text-decoration: none;
     color: #0082E6;
-    float:right;
     margin-right: 5%;
 }
 
 /*-----------------Search box-------------------*/
-body{
-    background: #f2f2f2;
+.wrap{
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .search {
-    width: 100%;
-
     position: relative;
     display: flex;
+    margin-right: -93%;
+    margin-top: 8%;
+    padding-left: 18%;
 }
 
 .searchTerm {
@@ -60,15 +68,11 @@ body{
     padding: 5px;
     border-radius: 5px 0 0 5px;
     outline: none;
-    color: black;
-}
-
-.searchTerm:focus{
-    color: dimgray;
+    color: #3b3b3b;
 }
 
 .searchButton {
-    width: 12%;
+    width: 2em;
     border: 1px solid #0082E6;
     background: #0082E6;
     text-align: center;
@@ -76,12 +80,44 @@ body{
     border-radius: 0 5px 5px 0 ;
     cursor: pointer;
     font-size: 20px;
+    outline: 0;
 }
 
-.wrap{
-    width: 30%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+@media only screen and (min-width: 768px) {
+    .wrap{
+        width: 30%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .search {
+        width: 100%;
+        position: relative;
+        display: flex;
+    }
+
+    .searchTerm {
+        width: 100%;
+        border: 1px solid #0082E6;
+        border-right: none;
+        padding: 5px;
+        border-radius: 5px 0 0 5px;
+        outline: none;
+        color: #3b3b3b;
+    }
+
+    .searchButton {
+        width: 2em;
+        border: 1px solid #0082E6;
+        background: #0082E6;
+        text-align: center;
+        color: #fff;
+        border-radius: 0 5px 5px 0 ;
+        cursor: pointer;
+        font-size: 20px;
+        outline: 0;
+    }
+
 }
