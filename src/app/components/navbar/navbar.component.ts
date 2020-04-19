@@ -12,13 +12,16 @@ export class NavbarComponent implements OnInit {
   ) {
   }
 
-  navbarOpen = false;
-
+  navbarDevice = false;
+  dropdown = false;
+  dropdownClass = '';
   toggleNavbar() {
-    this.navbarOpen = !this.navbarOpen;
+    this.navbarDevice = !this.navbarDevice;
   }
-
+  setDropdown(status: boolean){
+    this.dropdown = status;
+    this.dropdownClass = (!this.dropdown) ? '' : 'show';
+  }
   ngOnInit(): void {
   }
-
 }

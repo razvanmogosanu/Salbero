@@ -33,12 +33,6 @@
     text-align: right;
 }
 
-/*asta face hover si nu click*/
-.dropdown:hover .dropdown-menu {
-    display: block;
-    margin-top: 0;
-}
-
 
 #phone{
     text-decoration: none;
