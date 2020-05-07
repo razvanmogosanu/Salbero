@@ -37,7 +37,11 @@
     text-align: right;
 }
 
-
+/*-----------------Phone Number-------------------*/
+#wrap-phone{
+    text-align: right;
+    margin-top: 3%;
+}
 #phone{
     text-decoration: none;
     color: #0082E6;
@@ -84,6 +88,15 @@
 }
 
 @media only screen and (min-width: 768px) {
+    #wrap-phone{
+        text-align: right;
+        margin-top: 0.5%;
+    }
+
+    #upper-navbar{
+        margin-top: -1%;
+    }
+
     .wrap{
         width: 30%;
         position: absolute;
@@ -119,5 +132,10 @@
         font-size: 20px;
         outline: 0;
     }
+}
 
+@media only screen and (min-width: 1024px){
+    .wrap{
+        margin-top: -0.5%;
+    }
 }
