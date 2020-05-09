@@ -1,5 +1,5 @@
 <div id="wrap-phone">
-    <a id="phone" href="tel:+40729352586">+40 729 352 586</a>
+    <a id="phone" href="tel:+40729352586">Tel: +40 729 352 586</a>
 </div>
 
 
@@ -20,14 +20,14 @@
     <button class="navbar-toggler ml-auto navbar-dark" id="nav-dropdown" type="button" data-toggle="collapse"
             data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"
-            (click)="toggleNavbar()">
+            (click)="toggleNavbar()">Meniu
         <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarNavDropdown" [ngClass]="{ 'show': navbarDevice }">
         <ul class="navbar-nav">
 
-            <li class="nav-item"><a class="nav-link" routerLink="" (click)="toggleNavbar()">Acasa</a></li>
+            <li class="nav-item"><a class="nav-link" routerLink="" (click)="toggleNavbar()">Acasă</a></li>
 
             <li ngbDropdown class="nav-item dropdown" (mouseenter)="setDropdown(true)"
                 (mouseleave)="setDropdown(false)">
@@ -37,13 +37,13 @@
                 <div ngbDropdownMenu class="{{dropdownClass}}" style="margin-top: 0" (click)="setDropdown(false)">
                     <a class="dropdown-item" style="color: black; font-weight: 300" href="#">Gard</a>
                     <a class="dropdown-item" style="color: black; font-weight: 300" href="#">Spalieri</a>
-                    <a class="dropdown-item" style="color: black; font-weight: 300" href="#">Boltari</a>
+                    <a class="dropdown-item" style="color: black; font-weight: 300" href="#">Bolțari</a>
                     <a class="dropdown-item" style="color: black; font-weight: 300" href="#">Pavele</a>
-                    <a class="dropdown-item" style="color: black; font-weight: 300" href="#">Tigla</a>
+                    <a class="dropdown-item" style="color: black; font-weight: 300" href="#">Țiglă</a>
                     <a class="dropdown-item" style="color: black; font-weight: 300" href="#">Borduri</a>
                     <a class="dropdown-item" style="color: black; font-weight: 300" href="#">Caciuli si Coame gard</a>
-                    <a class="dropdown-item" style="color: black; font-weight: 300" href="#">Fantana Arteziana</a>
-                    <a class="dropdown-item" style="color: black; font-weight: 300" href="#">Piatra Decorativa</a>
+                    <a class="dropdown-item" style="color: black; font-weight: 300" href="#">Fantană Arteziană</a>
+                    <a class="dropdown-item" style="color: black; font-weight: 300" href="#">Piatră Decorativă</a>
                     <a class="dropdown-item" style="color: black; font-weight: 300" href="#">Jardiniere</a>
                 </div>
             </li>
@@ -54,4 +54,3 @@
         </ul>
     </div>
 </nav>
-

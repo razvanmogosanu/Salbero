@@ -12,12 +12,12 @@ section .section-title {
 }
 #footer {
     background: #e7eff8;
-    margin-bottom: 0;
+    height: 200px;
 }
 #footer h5{
     padding-left: 10px;
-    border-left: 3px solid gray;
     padding-bottom: 6px;
+    padding-top: 8px;
     margin-bottom: 20px;
     color:gray;
 }
@@ -64,6 +64,11 @@ section .section-title {
 }
 #footer ul.quick-links li:hover a i {
     font-weight: 700;
+}
+
+#footer-copyright{
+    color: gray;
+    margin-left: 10%;
 }
 
 @media (max-width:767px){
