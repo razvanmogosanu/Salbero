@@ -43,10 +43,16 @@
     text-align: right;
     margin-top: 3%;
 }
-#phone{
+.phone{
     text-decoration: none;
-    color: #0082E6;
+    color: black;/*#0082E6;*/
     margin-right: 5%;
+}
+#first-phone{
+    margin-right: 0%;
+}
+#phone-icon{
+    width: 20px;
 }
 
 /*-----------------Search box-------------------*/

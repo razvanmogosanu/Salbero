@@ -10,6 +10,7 @@ import {AppRoutingModule} from './app-routing.module';
 import { FooterComponent } from './components/footer/footer.component';
 import { ProduseComponent } from './components/produse/produse.component';
 import { DespreNoiComponent } from './components/despre-noi/despre-noi.component';
+import { ItemComponent } from './components/item/item.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { DespreNoiComponent } from './components/despre-noi/despre-noi.component
     ContactComponent,
     FooterComponent,
     ProduseComponent,
-    DespreNoiComponent
+    DespreNoiComponent,
+    ItemComponent
   ],
   imports: [
     BrowserModule,
