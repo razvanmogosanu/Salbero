@@ -1,1 +1,11 @@
-<p>produse works!</p>
+<div style="margin-left: 20%; margin-right: 20%; background-color: #0082E6">
+    <h2>Produse</h2>
+    <div *ngFor="let Produs of produse" class="card" style="width: 18rem;">
+        <img class="card-img-top" src="{{Produs.urlImage}}" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">{{Produs.name}}</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+</div>

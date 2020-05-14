@@ -33,7 +33,7 @@
 
             <li ngbDropdown class="nav-item dropdown" (mouseenter)="setDropdown(true)"
                 (mouseleave)="setDropdown(false)">
-                <a class="nav-link dropdown-toggle" routerLink="produse" id="navbarDropdownMenuLink">
+                <a class="nav-link dropdown-toggle" routerLink="produse" (click)="setTheme('produse')" id="navbarDropdownMenuLink">
                     Produse
                 </a>
                 <div ngbDropdownMenu class="{{dropdownClass}}" style="margin-top: 0" (click)="setDropdown(false)">

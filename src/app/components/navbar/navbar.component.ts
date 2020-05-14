@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
+import {SharedService} from '../../SharedService';
 
 @Component({
   selector: 'app-navbar',
@@ -8,8 +9,7 @@ import {Router} from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor(
-  ) {
+  constructor(private service: SharedService) {
   }
 
   navbarDevice = false;
@@ -23,5 +23,8 @@ export class NavbarComponent implements OnInit {
     this.dropdownClass = (!this.dropdown) ? '' : 'show';
   }
   ngOnInit(): void {
+  }
+  setTheme(theme) {
+    this.service.setLink(theme);
   }
 }
