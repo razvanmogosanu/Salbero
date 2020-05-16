@@ -1,0 +1,22 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="gard, tigla, fantana arteziana, boltari, jardiniere, vaze, targu jiu, borduri, pavele"/>
+    <meta name="author" content="Salbero S.R.L.">
+    <meta name="description"
+          content="">
+    <title>Salbero - Producator Gard, Boltari, Pavele si alte prefabricate din beton </title>
+</head>
+<body>
+    <div style="margin-left: 20%; margin-right: 50%">
+        <img src="{{selectedImage}}" alt="selectedImg">
+    </div>
+    <div style=" margin-left: 17%;">
+        <div *ngFor="let img of images"
+             (click)="onSelect(img)"
+             [class.selected]="img === selectedImage"
+             style="margin-left: 5%; margin-top: 5%; width: 50px; height: 50px; display:inline-block">
+            <img src="{{img}}">
+        </div>
+    </div>
+</body>
