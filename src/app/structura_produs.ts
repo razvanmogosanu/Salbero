@@ -1,4 +1,6 @@
 export interface Produs {
-    urlImage: string;
+    urlImage: string[];
     name: string;
+    description: string;
+    details: string;
 }

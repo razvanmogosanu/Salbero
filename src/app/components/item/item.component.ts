@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Produs} from '../../structura_produs';
+import {SharedService} from '../../SharedService';
 
 @Component({
   selector: 'app-item',
@@ -6,14 +8,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./item.component.css']
 })
 export class ItemComponent implements OnInit {
-  images = ['../../../assets/sediu.png', '../../../assets/unnamed.jpg', '../../../assets/unamed2.jpg'];
+  item: Produs = this.service.getItem();
+  images = this.item.urlImage;
+  description = this.item.description;
   selectedImage = this.images[0];
-  constructor() { }
+  constructor(public service: SharedService) { }
   ngOnInit(): void {
   }
-
   onSelect(img) {
     this.selectedImage = img;
   }
-
 }
