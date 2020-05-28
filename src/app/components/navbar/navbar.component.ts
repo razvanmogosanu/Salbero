@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {HostListener, Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
 import {SharedService} from '../../SharedService';
 
@@ -9,14 +9,20 @@ import {SharedService} from '../../SharedService';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor(private service: SharedService) {
+  constructor(private service: SharedService,
+              private router: Router) {
+    this.getScreenSize();
+    this.clicksOnProduse = 0;
   }
 
   navbarDevice = false;
   dropdown = false;
   dropdownClass = '';
-  toggleNavbar() {
-    this.navbarDevice = !this.navbarDevice;
+  screenHeight: number;
+  screenWidth: number;
+  clicksOnProduse: number;
+  toggleNavbar(activate: boolean) {
+    this.navbarDevice = activate;
   }
   setDropdown(status: boolean){
     this.dropdown = status;
@@ -24,7 +30,27 @@ export class NavbarComponent implements OnInit {
   }
   ngOnInit(): void {
   }
+  @HostListener('window:resize', ['$event'])
+  getScreenSize(event?) {
+    this.screenHeight = window.innerHeight;
+    this.screenWidth = window.innerWidth;
+  }
+
+
   setTheme(theme) {
     this.service.setLink(theme);
+    if (this.screenWidth > 600) {
+      this.router.navigateByUrl(theme);
+      this.setDropdown(false);
+    } else {
+      if (this.clicksOnProduse > 0) {
+        this.setDropdown(false);
+        this.toggleNavbar(false);
+        this.router.navigateByUrl(theme);
+        this.clicksOnProduse = 0;
+      } else {
+        this.clicksOnProduse++;
+      }
+    }
   }
 }

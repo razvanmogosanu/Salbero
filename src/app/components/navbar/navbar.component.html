@@ -22,18 +22,18 @@
     <button class="navbar-toggler ml-auto navbar-dark" id="nav-dropdown" type="button" data-toggle="collapse"
             data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"
-            (click)="toggleNavbar()">Meniu
+            (click)="toggleNavbar(!this.navbarDevice)">Meniu
         <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarNavDropdown" [ngClass]="{ 'show': navbarDevice }">
         <ul class="navbar-nav">
 
-            <li class="nav-item"><a class="nav-link" routerLink="" (click)="toggleNavbar()">Acasă</a></li>
+            <li class="nav-item"><a class="nav-link" routerLink="" (click)="toggleNavbar(false)">Acasă</a></li>
 
             <li ngbDropdown class="nav-item dropdown" (mouseenter)="setDropdown(true)"
                 (mouseleave)="setDropdown(false)">
-                <a class="nav-link dropdown-toggle" routerLink="produse" (click)="setTheme('produse')" id="navbarDropdownMenuLink">
+                <a class="nav-link dropdown-toggle" (click)="setTheme('produse')" id="navbarDropdownMenuLink">
                     Produse
                 </a>
                 <div ngbDropdownMenu class="{{dropdownClass}}" style="margin-top: 0" (click)="setDropdown(false)">
@@ -50,9 +50,9 @@
                 </div>
             </li>
 
-            <li class="nav-item"><a class="nav-link" routerLink="despre-noi" (click)="toggleNavbar()">Despre noi</a>
+            <li class="nav-item"><a class="nav-link" routerLink="despre-noi" (click)="toggleNavbar(false)">Despre noi</a>
             </li>
-            <li class="nav-item"><a class="nav-link" routerLink="contact" (click)="toggleNavbar()">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" routerLink="contact" (click)="toggleNavbar(false)">Contact</a></li>
         </ul>
     </div>
 </nav>

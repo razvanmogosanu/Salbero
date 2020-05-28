@@ -19,10 +19,11 @@
             </div>
         </div>
         <div class="small-images">
-            <div *ngFor="let img of images"
-                 (click)="onSelect(img)"
+            <div *ngFor="let img of images" (click)="onSelect(img)"
                  [class.selected]="img === selectedImage" class="small-img-container">
-                <img src="{{img}}">
+                <div *ngIf="img === selectedImage; then thenBlock else elseBlock"></div>
+                <ng-template #thenBlock><img src="{{img}}" id="small-selected-img"></ng-template>
+                <ng-template #elseBlock><img src="{{img}}"></ng-template>
             </div>
         </div>
     </div>
