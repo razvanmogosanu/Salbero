@@ -10,7 +10,6 @@ import {SharedService} from '../../SharedService';
 export class ItemComponent implements OnInit {
   item: Produs = this.service.getItem();
   images = this.item.urlImage;
-  description = this.item.description;
   selectedImage = this.images[0];
   constructor(public service: SharedService) { }
   ngOnInit(): void {
