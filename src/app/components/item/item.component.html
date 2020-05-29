@@ -18,12 +18,12 @@
                 <p>{{item.description}}</p>
             </div>
         </div>
-        <div class="small-images">
-            <div *ngFor="let img of images" (click)="onSelect(img)"
+        <div class="small-images-big-container">
+            <div *ngFor="let img of images" (click)="onSelect(img)" class="small-img-containers"
                  [class.selected]="img === selectedImage">
                 <div *ngIf="img === selectedImage; then thenBlock else elseBlock"></div>
-                <ng-template #thenBlock><img src="{{img}}" class="small-img-container" id="small-selected-img"></ng-template>
-                <ng-template #elseBlock><img src="{{img}}"class="small-img-container" ></ng-template>
+                <ng-template #thenBlock><img src="{{img}}" class="small-img" id="small-selected-img"></ng-template>
+                <ng-template #elseBlock><img src="{{img}}" class="small-img" ></ng-template>
             </div>
         </div>
     </div>

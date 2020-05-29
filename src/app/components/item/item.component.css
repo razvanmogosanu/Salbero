@@ -7,17 +7,16 @@ img{
     height: 90%;
 }
 
-.small-img-container{
+.small-img-containers{
     margin-left: -14px;
     margin-right: 6%;
     margin-top: 5%;
-    width: 70px;
-    height: 70px;
     display: inline-block;
 }
 
-img{
-
+.small-img{
+    width: 70px;
+    height: 70px;
 }
 
 #small-selected-img {
@@ -34,13 +33,13 @@ img{
         width: 60%;
     }
 
-    .small-img-container{
-        width: 100px;
-        height: 100px;
+    .small-images-big-container{
+        margin-left: 15%;
     }
 
-    .small-images{
-        margin-left: 15%;
+    .small-img{
+        width: 100px;
+        height: 100px;
     }
 
     #small-selected-img {
