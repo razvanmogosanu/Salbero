@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {HostListener, Component, OnInit } from '@angular/core';
 import {Produs} from '../../structura_produs';
 import {SharedService} from '../../SharedService';
 
@@ -11,10 +11,18 @@ export class ItemComponent implements OnInit {
   item: Produs = this.service.getItem();
   images = this.item.urlImage;
   selectedImage = this.images[0];
+  screenHeight: number;
+  screenWidth: number;
   constructor(public service: SharedService) { }
+
   ngOnInit(): void {
   }
+
   onSelect(img) {
     this.selectedImage = img;
+  }
+  getScreenSize(event?) {
+    this.screenHeight = window.innerHeight;
+    this.screenWidth = window.innerWidth;
   }
 }
