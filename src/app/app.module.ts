@@ -11,6 +11,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ProduseComponent } from './components/produse/produse.component';
 import { DespreNoiComponent } from './components/despre-noi/despre-noi.component';
 import { ItemComponent } from './components/item/item.component';
+import { SearchComponent } from './components/search/search.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ItemComponent } from './components/item/item.component';
     FooterComponent,
     ProduseComponent,
     DespreNoiComponent,
-    ItemComponent
+    ItemComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

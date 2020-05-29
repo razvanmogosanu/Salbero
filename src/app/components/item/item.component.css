@@ -15,9 +15,15 @@ img{
     height: 70px;
     display: inline-block;
 }
+
+img{
+
+}
+
 #small-selected-img {
-/*    to be set */
-    border-radius: 20px;
+    border-color: #0082E6;
+    width: 60px;
+    height: 60px;
 }
 
 
@@ -35,6 +41,11 @@ img{
 
     .small-images{
         margin-left: 15%;
+    }
+
+    #small-selected-img {
+        width: 90px;
+        height: 90px;
     }
 }
 
