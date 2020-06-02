@@ -3,9 +3,9 @@
     <div *ngFor="let Produs of produse" class="card" style="width: 18rem;">
         <img class="card-img-top" src="{{Produs.urlImage[0]}}" alt="Card image cap">
         <div class="card-body">
-            <h5 class="card-title">Card title</h5>  
+            <h5 class="card-title">Card title</h5>
             <p class="card-text">{{Produs.name}}</p>
-            <a (click)="goItem(Produs)" class="btn btn-primary">Go somewhere</a>
+            <a [routerLink]="['/produse', Produs.name]" routerLinkActive="active" (click)="goItem(Produs)" class="btn btn-primary">Go somewhere</a>
         </div>
     </div>
 </div>

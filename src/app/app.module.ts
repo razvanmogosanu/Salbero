@@ -12,6 +12,7 @@ import { ProduseComponent } from './components/produse/produse.component';
 import { DespreNoiComponent } from './components/despre-noi/despre-noi.component';
 import { ItemComponent } from './components/item/item.component';
 import { SearchComponent } from './components/search/search.component';
+import {ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,13 +26,14 @@ import { SearchComponent } from './components/search/search.component';
     ItemComponent,
     SearchComponent
   ],
-  imports: [
-    BrowserModule,
-    NgbModule,
-    RouterModule,
-    RouterModule.forRoot([]),
-    AppRoutingModule,
-  ],
+    imports: [
+        BrowserModule,
+        NgbModule,
+        RouterModule,
+        RouterModule.forRoot([]),
+        AppRoutingModule,
+        ReactiveFormsModule,
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
