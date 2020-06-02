@@ -1,3 +1,17 @@
 .card {
     position: static;
 }
+
+/* Center align div*/
+.cont {
+    margin: 1% auto;
+    padding: 2%;
+    position: relative;
+}
+
+.prod{
+    margin: 1% 1%;
+    width: 200px;
+    height: 200px;
+    background-color: lightgray;
+}

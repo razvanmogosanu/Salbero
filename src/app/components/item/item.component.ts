@@ -21,7 +21,8 @@ export class ItemComponent implements OnInit {
   onSelect(img) {
     this.selectedImage = img;
   }
-  getScreenSize(event?) {
+  getScreenSize(event?
+  ) {
     this.screenHeight = window.innerHeight;
     this.screenWidth = window.innerWidth;
   }
