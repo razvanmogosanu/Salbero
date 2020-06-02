@@ -19,7 +19,6 @@ constructor(private service: SharedService,
         return this.service.getLink();
     }
     goItem(produs: Produs) {
-        this.router.navigateByUrl('item');
         this.service.setItem(produs);
     }
 }

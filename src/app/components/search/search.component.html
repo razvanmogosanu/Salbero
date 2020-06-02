@@ -1,12 +1,13 @@
 
 <div class="navbar" id="upper-navbar">
-    <a class="navbar-brand" href="#">SALBERO</a>
+    <a class="navbar-brand" href="">SALBERO</a>
     <div class="wrap">
         <div class="search">
-            <input type="text" class="searchTerm" placeholder="Caută un produs">
+            <input type="text" class="searchTerm" placeholder="Caută un produs" [formControl]="myControl">
             <button type="submit" class="searchButton">
                 <i class="fa fa-search"></i>
             </button>
         </div>
+<!--        <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn()" ></mat-autocomplete>-->
     </div>
 </div>
