@@ -1,32 +1,22 @@
-<div class="container" style="background-color: red">
+<div class="contain" style="background-color: red">
     <div class="row" style="background-color: blue;">
 
-        <div class="col-xl-3 prod">
+        <div *ngFor="let Produs of produse" class="col-xl-3 prod">
+            <div class="card">
+                <img class="card-img-top" src="{{Produs.urlImage[0]}}" alt="Card image cap">
 
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <a href="#">{{Produs.name}}</a>
+                    </h5>
+                    <a [routerLink]="['/produse', Produs.name]" routerLinkActive="active" (click)="goItem(Produs)" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
         </div>
-        <div class="col-xl-3 prod">
-
-        </div>
-        <div class="col-xl-3 prod">
-
-        </div>
-        <div class="col-xl-3 prod">
-
-        </div>
-        <div class="col-xl-3 prod">
-
-        </div>
-        <div class="col-xl-3 prod">
-
-        </div>
-        <div class="col-xl-3 prod">
-
-        </div>
-
     </div>
 </div>
 
-<div style="margin-left: 20%; margin-right: 20%; background-color: #0082E6; width: 50%">
+<!--<div style="margin-left: 20%; margin-right: 20%; background-color: #0082E6; width: 50%">
     <h2>Produse</h2>
     <div *ngFor="let Produs of produse" class="card" style=" width: 100%;">
         <img class="card-img-top" src="{{Produs.urlImage[0]}}" alt="Card image cap">
@@ -36,4 +26,4 @@
             <a [routerLink]="['/produse', Produs.name]" routerLinkActive="active" (click)="goItem(Produs)" class="btn btn-primary">Go somewhere</a>
         </div>
     </div>
-</div>
+</div>-->
