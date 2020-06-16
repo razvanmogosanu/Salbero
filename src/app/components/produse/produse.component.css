@@ -1,13 +1,16 @@
 .contain{
-    margin-left: 10%;
-    margin-right: 10%;
 }
 .row{
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
 }
 
 .card {
     position: static;
     height: 50%;
+    background-color: #3b3b3b;
 }
 
 /* Center align div*/
@@ -24,10 +27,6 @@
     background-color: lightgray;
 }
 
-img{
-    width: 100%;
-}
-
 a{
     text-decoration: none;
     color: black;
@@ -36,3 +35,8 @@ a{
 h5{
     color: #EF2809;
 }
+
+@media only screen and (min-width: 768px) {
+
+}
+

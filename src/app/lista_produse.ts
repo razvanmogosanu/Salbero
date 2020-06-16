@@ -11,11 +11,14 @@ export const listaProduse: Produs[] = [
         description: 'descriere',  name: 'Gard de beton timurla', details: 'detalii', price: '100 lei/ml' },
 
     { urlImage: ['../../../assets/gard_timurla.jpeg'],
-            description: 'descriere',  name: 'Gard de beton timurla', details: 'detalii', price: '100 lei/ml' },
+        description: 'descriere',  name: 'Gard de beton timurla', details: 'detalii', price: '100 lei/ml' },
 
     { urlImage: ['../../../assets/gard_timurla.jpeg'],
-            description: 'descriere',  name: 'Gard de beton timurla', details: 'detalii', price: '100 lei/ml' },
+        description: 'descriere',  name: 'Gard de beton timurla', details: 'detalii', price: '100 lei/ml' },
 
     { urlImage: ['../../../assets/gard_timurla.jpeg'],
-            description: 'descriere',  name: 'Gard de beton timurla', details: 'detalii', price: '100 lei/ml' },
+        description: 'descriere',  name: 'Gard de beton timurla', details: 'detalii', price: '100 lei/ml' },
+
+    { urlImage: ['../../../assets/gard_timurla.jpeg'],
+        description: 'descriere',  name: 'Gard de beton timurla', details: 'detalii', price: '100 lei/ml' },
 ];

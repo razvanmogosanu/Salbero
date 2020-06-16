@@ -20,12 +20,18 @@ export class ItemComponent implements OnInit {
 
   ngOnInit() {
     const url = this.route.snapshot.url[1];
+    let urlString = url.toString();
+    let x = 0;
+    while (x !== -1){
+      urlString = urlString.replace('%20', ' ');
+      x = urlString.indexOf('%20');
+    }
     for (const produs of listaProduse) {
-        if (produs.name === url.toString()) {
-          this.item = produs;
-          this.images = produs.urlImage;
-          this.selectedImage = this.images[0];
-        }
+      if (produs.name === urlString) {
+        this.item = produs;
+        this.images = produs.urlImage;
+        this.selectedImage = this.images[0];
+      }
     }
   }
 
