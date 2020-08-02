@@ -1,1 +1,41 @@
-<p>despre-noi works!</p>
+<div class="mycontainer-1">
+    <div class="cine-suntem-txt-1">
+        <h5 class="title">Cine suntem noi ?</h5>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lacinia pharetra
+        magna, at lacinia purus
+        gravida vel. Nam sed magna semper, eleifend enim non, pharetra massa. Duis in fermentum lorem. Nunc auctor mi ut
+        dolor interdum, eu elementum nulla semper. Phasellus quis libero rutrum ipsum dapibus elementum. Cras dapibus,
+        sem eget blandit dapibus, turpis lectus gravida neque, id maximus velit magna sed nisi.
+    </div>
+    <img class="cine-suntem-img-1" src="../../../assets/despre-noi1.png">
+</div>
+
+<div class="mycontainer-2">
+    <div *ngIf="screenWidth > 768; then desktopBlock else mobileBlock"></div>
+
+    <ng-template #desktopBlock>
+        <img class="cine-suntem-img-2" src="../../../assets/teamwork.png">
+        <div class="cine-suntem-txt-2">
+            <h5 class="title">Valorile noastre</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lacinia pharetra
+                magna, at lacinia purus
+                gravida vel. Nam sed magna semper, eleifend enim non, pharetra massa. Duis in fermentum lorem. Nunc auctor mi ut
+                dolor interdum, eu elementum nulla semper. Phasellus quis libero rutrum ipsum dapibus elementum. Cras dapibus,
+                sem eget blandit dapibus, turpis lectus gravida neque, id maximus velit magna sed nisi.</p>
+        </div>
+    </ng-template>
+
+    <ng-template #mobileBlock>
+        <div class="cine-suntem-txt-2">
+            <h5 class="title">Valorile noastre</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lacinia pharetra
+                magna, at lacinia purus
+                gravida vel. Nam sed magna semper, eleifend enim non, pharetra massa. Duis in fermentum lorem. Nunc auctor mi ut
+                dolor interdum, eu elementum nulla semper. Phasellus quis libero rutrum ipsum dapibus elementum. Cras dapibus,
+                sem eget blandit dapibus, turpis lectus gravida neque, id maximus velit magna sed nisi.</p>
+        </div>
+        <img class="cine-suntem-img-2" src="../../../assets/teamwork.png">
+    </ng-template>
+
+
+</div>

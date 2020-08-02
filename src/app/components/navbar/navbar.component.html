@@ -21,24 +21,46 @@
 
             <li ngbDropdown class="nav-item dropdown" (mouseenter)="setDropdown(true)"
                 (mouseleave)="setDropdown(false)">
-                <a class="nav-link dropdown-toggle" (click)="setTheme('produse')" id="navbarDropdownMenuLink">
+                <a class="nav-link dropdown-toggle" [routerLink]="['/produse']" (click)="setTheme('produse')"
+                   id="navbarDropdownMenuLink">
                     Produse
                 </a>
                 <div ngbDropdownMenu class="{{dropdownClass}}" style="margin-top: 0" (click)="setDropdown(false)">
-                    <a class="dropdown-item" style="color: black; font-weight: 300" href="#">Gard</a>
-                    <a class="dropdown-item" style="color: black; font-weight: 300" href="#">Spalieri</a>
-                    <a class="dropdown-item" style="color: black; font-weight: 300" href="#">Bolțari</a>
-                    <a class="dropdown-item" style="color: black; font-weight: 300" href="#">Pavele</a>
-                    <a class="dropdown-item" style="color: black; font-weight: 300" href="#">Țiglă</a>
-                    <a class="dropdown-item" style="color: black; font-weight: 300" href="#">Borduri</a>
-                    <a class="dropdown-item" style="color: black; font-weight: 300" href="#">Caciuli si Coame gard</a>
-                    <a class="dropdown-item" style="color: black; font-weight: 300" href="#">Fantană Arteziană</a>
-                    <a class="dropdown-item" style="color: black; font-weight: 300" href="#">Piatră Decorativă</a>
-                    <a class="dropdown-item" style="color: black; font-weight: 300" href="#">Jardiniere</a>
+                    <div class="dropdown-item" style="color: black; font-weight: 300" [routerLink]="['/produse','gard']"
+                         (click)="setTheme('gard')">Gard
+                    </div>
+                    <div class="dropdown-item" style="color: black; font-weight: 300"
+                         [routerLink]="['/produse','spalier']"
+                         (click)="setTheme('spalier')">Spalieri
+                    </div>
+                    <div class="dropdown-item" style="color: black; font-weight: 300" (click)="setTheme('boltar')">
+                        Bolțari
+                    </div>
+                    <div class="dropdown-item" style="color: black; font-weight: 300" (click)="setTheme('pavel')">
+                        Pavele
+                    </div>
+                    <div class="dropdown-item" style="color: black; font-weight: 300" (click)="setTheme('tigla')">
+                        Țiglă
+                    </div>
+                    <div class="dropdown-item" style="color: black; font-weight: 300" (click)="setTheme('bordur')">
+                        Borduri
+                    </div>
+                    <div class="dropdown-item" style="color: black; font-weight: 300" (click)="setTheme('caciul')">
+                        Caciuli si Coame gard
+                    </div>
+                    <div class="dropdown-item" style="color: black; font-weight: 300" (click)="setTheme('fantana')">
+                        Fantană Arteziană
+                    </div>
+                    <div class="dropdown-item" style="color: black; font-weight: 300" (click)="setTheme('piatra')">
+                        Piatră Decorativă
+                    </div>
+                    <div class="dropdown-item" style="color: black; font-weight: 300" (click)="setTheme('jardinier')">
+                        Jardiniere
+                    </div>
                 </div>
             </li>
-
-            <li class="nav-item"><a class="nav-link" routerLink="despre-noi" (click)="toggleNavbar(false)">Despre noi</a>
+            <li class="nav-item"><a class="nav-link" routerLink="despre-noi" (click)="toggleNavbar(false)">Despre
+                noi</a>
             </li>
             <li class="nav-item"><a class="nav-link" routerLink="contact" (click)="toggleNavbar(false)">Contact</a></li>
         </ul>

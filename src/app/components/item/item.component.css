@@ -1,53 +1,152 @@
-.container{
+
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    width: 60%;
+}
+
+.content-table thead tr {
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+}
+
+.content-table thead {
+    background-color: #e78200;
+    width: 100%;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+/*  above we have the table */
+
+.container-produs {
     margin-left: 5%;
+    margin-right: 5%;
 }
 
-img{
-    width: 90%;
-    height: 90%;
+img {
+    width: 100%;
+    height: 100%;
 }
 
-.small-images-big-container{
-    margin-left: -14px;
+.small-images-big-container {
+
 }
 
-.small-img-containers{
+.small-img-containers {
     margin-right: 6%;
     margin-top: 5%;
     display: inline-block;
 }
 
-.small-img{
-    width: 70px;
-    height: 70px;
+.small-img {
+    width: 5%;
+    height: 50%;
     border-radius: 3px;
 }
 
-#small-selected-img {
+.small-selected-img {
     border: 2.5px solid #0082E6;
     width: 67px;
     height: 67px;
 }
 
-@media only screen and (min-width: 600px)
-{
-    .big-image{
-        margin-left: 15%;
-        width: 60%;
+.container-title-description-price {
+    margin-top: 4%;
+}
+
+.item-price {
+    color: #ef2809;
+    font-weight: 600;
+    font-size: 22px;
+    font-family: Arial, sans-serif;
+    white-space: nowrap;
+}
+
+sup {
+    font-size: 65%;
+    position: relative;
+    margin-left: .1em;
+}
+
+.call-now-button {
+    background-color: #0082E6;
+    border-radius: 5px;
+}
+
+.product-code {
+    color: #B0b0b0;
+    font-size: 80%
+}
+
+
+@media only screen and (min-width: 600px) {
+    .container-produs {
+        margin-left: 13%;
+        margin-right: 13%;
+
     }
 
-    .small-images-big-container{
-        margin-left: 15%;
+    .container-upper-part {
+        display: flex;
+
     }
 
-    .small-img{
-        width: 100px;
-        height: 100px;
+    .big-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .big-image-container {
+        border-color: #3b3b3b;
+        border-width: 1px;
+        border-style: ridge;
+    }
+
+    .container-title-description-price {
+        margin-top: 4%;
+        margin-left: 4%;
+        margin-right: 2%;
+    }
+
+    .call-now-button {
+        color: #231F20;
+        background-color: #e78200;
+        border: 2px solid #231F20;
+        border-radius: 0 !important;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .small-images-big-container {
+        margin-top: 2%;
+        margin-left: 1%;
+        display: inline-block;
+    }
+
+    .small-img {
+
     }
 
     #small-selected-img {
-        width: 95px;
-        height: 95px;
+
     }
 }
 

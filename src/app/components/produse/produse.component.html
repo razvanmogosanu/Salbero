@@ -1,17 +1,13 @@
-<div class="contain" style="background-color: red">
-    <div class="row" style="background-color: blue;">
+<div class="container">
+    <div >{{getTheme()}}</div>
+    <hr>
+    <div class="row">
+        <div *ngFor="let Produs of resolveProducts()" class="mycard">
+            <img class="mycard-image" src="{{Produs.urlImage[0]}}" alt="Card image cap" [routerLink]="['',Produs.name]" (click)="goItem(Produs)">
 
-        <div *ngFor="let Produs of produse" class="col-xl-2 prod">
-            <div class="card">
-                <img class="card-img-top" src="{{Produs.urlImage[0]}}" alt="Card image cap">
-
-                <div class="card-body">
-                    <h5 class="card-title">
-                        <a href="#">{{Produs.name}}</a>
-                    </h5>
-                    <a [routerLink]="['/produse', Produs.name]" routerLinkActive="active" (click)="goItem(Produs)" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
+            <span class="productDescription">{{Produs.name}} {{Produs.details}} {{Produs.height}} x {{Produs.width}} {{Produs.dimensionUnitMeasure}}</span>
+            <span class="productPrice">{{Produs.price}} {{Produs.priceUnitMeasure}}</span>
+            <button type="button" class="btn btn-light see-details-btn">Vezi detalii</button>
         </div>
     </div>
 </div>

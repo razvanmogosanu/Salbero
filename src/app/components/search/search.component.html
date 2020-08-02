@@ -1,13 +1,12 @@
-
 <div class="navbar" id="upper-navbar">
-    <a class="navbar-brand" href="">SALBERO</a>
+    <a class="navbar-brand logo" href=""><img src="../../../assets/logo.png"></a>
     <div class="wrap">
         <div class="search">
-            <input type="text" class="searchTerm" placeholder="Caută un produs" [formControl]="myControl">
-            <button type="submit" class="searchButton">
+            <input #myInput (keyup)="takeInput($event)" name="searchBox" type="text" class="searchTerm "
+                   placeholder="Caută un produs">
+            <button type="submit" class="searchButton" [routerLink]="['produse',inputValue]" (click)="reset()">
                 <i class="fa fa-search"></i>
             </button>
         </div>
-<!--        <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn()" ></mat-autocomplete>-->
     </div>
 </div>

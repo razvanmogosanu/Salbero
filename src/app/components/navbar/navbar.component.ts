@@ -40,13 +40,13 @@ export class NavbarComponent implements OnInit {
   setTheme(theme) {
     this.service.setLink(theme);
     if (this.screenWidth > 600) {
-      this.router.navigateByUrl(theme);
+      // this.router.navigateByUrl('produse');
       this.setDropdown(false);
     } else {
       if (this.clicksOnProduse > 0) {
         this.setDropdown(false);
         this.toggleNavbar(false);
-        this.router.navigateByUrl(theme);
+        this.router.navigateByUrl('produse');
         this.clicksOnProduse = 0;
       } else {
         this.clicksOnProduse++;

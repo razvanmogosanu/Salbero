@@ -6,19 +6,23 @@ import {Produs} from './structura_produs';
 })
 export class SharedService {
     link = String();
-    item;
-    constructor() { }
+    item: Produs;
+
+    constructor() {
+    }
 
     setLink(link) {
         this.link = link;
     }
 
-    getLink(){
+    getLink() {
         return this.link;
     }
+
     setItem(produs: Produs) {
         this.item = produs;
     }
+
     getItem() {
         return this.item;
     }

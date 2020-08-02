@@ -1,29 +1,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="gard, {{item.name}}, tigla, fantana arteziana, boltari, jardiniere, vaze, targu jiu, borduri, pavele"/>
+    <meta name="keywords"
+          content="gard, {{item.name}}, tigla, fantana arteziana, boltari, jardiniere, vaze, targu jiu, borduri, pavele"/>
     <meta name="description" content="{{item.description}}">
     <meta name="author" content="Salbero S.R.L.">
     <title>Salbero - Producator Gard, Boltari, Pavele si alte prefabricate din beton </title>
 </head>
+
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="big-image">
-                <img src="{{selectedImage}}" alt="selectedImg">
+<div *ngIf="screenWidth > 600; then desktopBlock else mobileBlock"></div>
+<ng-template #desktopBlock>
+    <div class="container-produs">
+        <div class="container-upper-part">
+
+            <div class="big-image-container">
+                <img class="big-image" src="{{selectedImage}}" alt="selectedImg">
             </div>
-            <div>
-                <h3>{{item.name}}</h3>
+
+            <div class="container-title-description-price">
+                <h3>{{item.name}}, {{item.height}} x {{item.width}} {{item.dimensionUnitMeasure}}</h3>
+                <div class="product-code">CP: {{item.productCode}}</div>
+                <hr style="border-top: 3px solid #D3D3D3;">
                 <p>{{item.description}}</p>
+                <!--                <p class="item-price">{{item.price}}<sup>99</sup> {{item.priceUnitMeasure}}</p>-->
+                <a href="tel:+40726841448" type="button" class="btn btn-warning call-now-button">SUNA ACUM</a>
+                <hr style="border-top: 3px solid #D3D3D3;">
             </div>
         </div>
+
         <div class="small-images-big-container">
             <div *ngFor="let img of images" (click)="onSelect(img)" class="small-img-containers"
                  [class.selected]="img === selectedImage">
                 <div *ngIf="img === selectedImage; then thenBlock else elseBlock"></div>
-                <ng-template #thenBlock><img src="{{img}}" class="small-img" id="small-selected-img"></ng-template>
-                <ng-template #elseBlock><img src="{{img}}" class="small-img" ></ng-template>
+                <ng-template #thenBlock><img src="{{img}}" class="small-img small-selected-img"></ng-template>
+                <ng-template #elseBlock><img src="{{img}}" class="small-img"></ng-template>
             </div>
         </div>
+
+        <div>
+            <table class="content-table">
+                <thead>
+                <th>{{item.name}}</th>
+                <th></th>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Grosime/Inaltime</td>
+                    <td>80</td>
+                </tr>
+                <tr>
+                    <td>Dimensiune</td>
+                    <td>84</td>
+                </tr>
+                <tr>
+                    <td>Destinatie</td>
+                    <td>Gradina</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
+
+</ng-template>
+<ng-template #mobileBlock>
+    <div class="container-produs">
+        <div>
+
+            <div class="big-image">
+                <img src="{{selectedImage}}" alt="selectedImg">
+            </div>
+
+            <div class="small-images-big-container">
+                <div *ngFor="let img of images" (click)="onSelect(img)" class="small-img-containers"
+                     [class.selected]="img === selectedImage">
+                    <div *ngIf="img === selectedImage; then thenBlock else elseBlock"></div>
+                    <ng-template #thenBlock><img src="{{img}}" class="small-img small-selected-img"></ng-template>
+                    <ng-template #elseBlock><img src="{{img}}" class="small-img"></ng-template>
+                </div>
+            </div>
+
+            <div class="container-title-description-price">
+                <h3>{{item.name}}</h3>
+                <div class="subtitle">{{item.subTitle}}</div>
+                <hr style="border-top: 3px solid #D3D3D3;">
+                <p>{{item.description}}</p>
+                <p class="item-price">{{item.price}}<sup>99</sup> lei/ml</p>
+                <a href="tel:+40726841448" type="button" class="btn btn-primary btn-sm call-now-button">Suna acum!</a>
+                <hr style="border-top: 3px solid #D3D3D3;">
+            </div>
+
+        </div>
+    </div>
+
+</ng-template>
+
+
 </body>

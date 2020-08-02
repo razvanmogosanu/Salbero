@@ -24,7 +24,7 @@ import {ReactiveFormsModule} from '@angular/forms';
     ProduseComponent,
     DespreNoiComponent,
     ItemComponent,
-    SearchComponent
+    SearchComponent,
   ],
     imports: [
         BrowserModule,

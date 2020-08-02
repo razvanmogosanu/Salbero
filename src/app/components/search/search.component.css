@@ -1,14 +1,15 @@
-.navbar{
+.navbar {
     height: 2.8em;
     margin-top: 1.2em;
 }
-.navbar-brand{
+
+.navbar-brand {
     color: black;
     margin-left: 8%;
 }
 
 /*-----------------Search box-------------------*/
-.wrap{
+.wrap {
     width: 30%;
     position: absolute;
     top: 50%;
@@ -40,19 +41,21 @@
     background: #0082E6;
     text-align: center;
     color: #fff;
-    border-radius: 0 5px 5px 0 ;
+    border-radius: 0 5px 5px 0;
     cursor: pointer;
     font-size: 20px;
     outline: 0;
 }
 
+img{width: 80%; height: 70%}
 
 @media only screen and (min-width: 768px) {
 
-    #upper-navbar{
+    #upper-navbar {
         margin-top: -1%;
     }
-    .wrap{
+
+    .wrap {
         width: 30%;
         position: absolute;
         top: 50%;
@@ -82,16 +85,173 @@
         background: #0082E6;
         text-align: center;
         color: #fff;
-        border-radius: 0 5px 5px 0 ;
+        border-radius: 0 5px 5px 0;
         cursor: pointer;
         font-size: 20px;
         outline: 0;
     }
 }
 
+.logo {
+    display: flex;
+    margin-top: -6%;
+}
 
-@media only screen and (min-width: 1024px){
-    .wrap{
+@media only screen and (max-width: 319px) {
+    .wrap {
         margin-top: -0.5%;
     }
+
+    .logo {
+        display: none;
+
+    }
+
 }
+
+@media only screen and (max-width: 360px) and (min-width: 320px) {
+    .wrap {
+        margin-top: -0.5%;
+    }
+
+    .logo {
+        display: flex;
+        margin-left: -4%;
+        margin-top: -20%;
+    }
+    img {
+        width: 60%;
+    }
+}
+
+
+@media only screen and (max-width: 400px) and (min-width: 360px) {
+    .wrap {
+        margin-top: -0.5%;
+    }
+
+    .logo {
+        display: flex;
+        margin-left: -5%;
+        margin-top: -20%;
+    }
+}
+
+
+@media only screen and (max-width: 450px) and (min-width: 400px) {
+    .wrap {
+        margin-top: -0.5%;
+    }
+
+    .logo {
+        display: flex;
+        margin-left: -2%;
+        margin-top: -17%;
+    }
+}
+
+
+@media only screen and (max-width: 550px) and (min-width: 450px) {
+    .wrap {
+        margin-top: -0.5%;
+    }
+
+    .logo {
+        display: flex;
+        margin-left: 3%;
+        margin-top: -15%;
+    }
+}
+
+
+@media only screen and (max-width: 650px) and (min-width: 550px) {
+    .wrap {
+        margin-top: -0.5%;
+    }
+
+    .logo {
+        display: flex;
+        margin-left: 3%;
+        margin-top: -15%;
+    }
+}
+
+@media only screen and (max-width: 750px) and (min-width: 650px) {
+    .wrap {
+        margin-top: -0.5%;
+    }
+
+    .logo {
+        display: flex;
+        margin-top: -10%;
+    }
+}
+
+@media only screen and (max-width: 800px) and (min-width: 750px) {
+    .wrap {
+        margin-top: -0.5%;
+    }
+
+    .logo {
+        display: flex;
+        margin-top: -9%;
+    }
+}
+
+
+@media only screen and (max-width: 900px) and (min-width: 800px) {
+    .wrap {
+        margin-top: -0.5%;
+    }
+
+    .logo {
+        display: flex;
+        margin-top: -8%;
+    }
+}
+
+@media only screen and (max-width: 1049px) and (min-width: 900px) {
+    .wrap {
+        margin-top: -0.5%;
+    }
+
+    .logo {
+        display: flex;
+        margin-top: -7%;
+    }
+}
+
+
+@media only screen and (max-width: 1249px) and (min-width: 1050px) {
+    .wrap {
+        margin-top: -0.5%;
+    }
+
+    .logo {
+        display: flex;
+        margin-top: -6%;
+    }
+}
+
+@media (max-width: 1500px) and (min-width: 1250px) {
+    .logo {
+        display: flex;
+        margin-top: -5%;
+    }
+}
+
+@media (max-width: 1850px) and (min-width: 1500px) {
+    .logo {
+        display: flex;
+        margin-top: -4%
+    }
+}
+
+
+@media (max-width: 2050px) and (min-width: 1850px) {
+    .logo {
+        display: flex;
+        margin-top: -3.5%
+    }
+}
+
