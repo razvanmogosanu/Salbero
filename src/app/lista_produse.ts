@@ -3,7 +3,7 @@ import {Produs} from './structura_produs';
 export const listaProduse: Produs[] = [
     {
         productCode: 'CD93214121',
-        urlImage: ['../../../assets/products42/gard_valuri.jpg'],
+        urlImage: ['../../../assets/products/gard_valuri.jpg'],
         description: 'Placi produse din ciment performant, armate cu fier beton Ø 6 ce ofera o rezistenta superioara perfecte pentru ingradirea curtii',
         name: 'Gard de beton 3D',
         details: 'detalii',
@@ -17,7 +17,7 @@ export const listaProduse: Produs[] = [
 
     {
         productCode: 'CD93214121',
-        urlImage: ['../../../assets/products42/gard_timurlea2.jpg'],
+        urlImage: ['../../../assets/products/gard_timurlea2.jpg'],
         description: 'Placi produse din ciment performant, armate cu fier beton Ø 6 ce ofera o rezistenta superioara perfecte pentru ingradirea curtii',
         name: 'Gard de beton Timurlea 2',
         details: 'detalii',
@@ -31,7 +31,7 @@ export const listaProduse: Produs[] = [
 
     {
         productCode: 'CD93214121',
-        urlImage: ['../../../assets/products42/gard_lemn.jpg'],
+        urlImage: ['../../../assets/products/gard_lemn.jpg'],
         description: 'Placi produse din ciment performant, armate cu fier beton Ø 6 ce ofera o rezistenta superioara perfecte pentru ingradirea curtii',
         name: 'Gard de beton Lemn Suprapus',
         details: 'detalii',
@@ -45,7 +45,7 @@ export const listaProduse: Produs[] = [
 
     {
         productCode: 'CD93214121',
-        urlImage: ['../../../assets/products42/boltari20.jpg', '../../../assets/products42/boltari12.jpg'],
+        urlImage: ['../../../assets/products/boltari20.jpg', '../../../assets/products/boltari12.jpg'],
         description: 'Solutia perfecta pentru constructia peretilor si a gardurilor. Sunt produsi din ciment performant ce le ofera o rezistenta superioara',
         name: 'Boltari',
         details: 'detalii',
@@ -59,7 +59,7 @@ export const listaProduse: Produs[] = [
 
     {
         productCode: 'CD93214121',
-        urlImage: ['../../../assets/products42/capac_bob_rosu.jpg'],
+        urlImage: ['../../../assets/products/capac_bob_rosu.jpg'],
         description: 'Produse din ciment performant, cu o rezistenta superioara, capacele constituie ' +
             'un accesoriu indispensabil pentru gard',
         name: 'Capac stalp gard bob',
@@ -74,7 +74,7 @@ export const listaProduse: Produs[] = [
 
     {
         productCode: 'CD93214121',
-        urlImage: ['../../../assets/products42/capac_neted_gri.jpg'],
+        urlImage: ['../../../assets/products/capac_neted_gri.jpg'],
         description: 'Produse din ciment performant, cu o rezistenta superioara, capacele constituie ' +
             'un accesoriu indispensabil pentru gard',
         name: 'Capac stalp gard neted',
@@ -89,7 +89,7 @@ export const listaProduse: Produs[] = [
 
     {
         productCode: 'CD93214121',
-        urlImage: ['../../../assets/products42/capac_floare_gri.jpg'],
+        urlImage: ['../../../assets/products/capac_floare_gri.jpg'],
         description: 'Produse din ciment performant, cu o rezistenta superioara, capacele constituie ' +
             'un accesoriu indispensabil pentru gard',
         name: 'Capac stalp gard floare',
@@ -104,7 +104,7 @@ export const listaProduse: Produs[] = [
 
     {
         productCode: 'CD93214121',
-        urlImage: ['../../../assets/products42/capac_ascutit_rosu.jpg'],
+        urlImage: ['../../../assets/products/capac_ascutit_rosu.jpg'],
         description: 'Produse din ciment performant, cu o rezistenta superioara, capacele constituie ' +
             'un accesoriu indispensabil pentru gard',
         name: 'Capac stalp gard ascutit',
@@ -119,8 +119,8 @@ export const listaProduse: Produs[] = [
 
     {
         productCode: 'CD93214121',
-        urlImage: ['../../../assets/products42/coama_50x30.jpg', '../../../assets/products42/coama_50x30_rosu.jpg',
-            '../../../assets/products42/coama_40x27.jpg', '../../../assets/products42/coama_40x27_rosu.jpg'],
+        urlImage: ['../../../assets/products/coama_50x30.jpg', '../../../assets/products/coama_50x30_rosu.jpg',
+            '../../../assets/products/coama_40x27.jpg', '../../../assets/products/coama_40x27_rosu.jpg'],
         description: 'Produse din ciment performant, cu o rezistenta superioara, coamele constituie ' +
             'un accesoriu indispensabil pentru gard',
         name: 'Coama gard neted',
@@ -135,7 +135,7 @@ export const listaProduse: Produs[] = [
 
     {
         productCode: 'CD93214121',
-        urlImage: ['../../../assets/products42/coama_40x35_bob.jpg', '../../../assets/products42/coama_40x35_bob_rosu.jpg'],
+        urlImage: ['../../../assets/products/coama_40x35_bob.jpg', '../../../assets/products/coama_40x35_bob_rosu.jpg'],
         description: 'Produse din ciment performant, cu o rezistenta superioara, coamele constituie ' +
             'un accesoriu indispensabil pentru gard',
         name: 'Coama gard bob',
@@ -150,7 +150,7 @@ export const listaProduse: Produs[] = [
 
     {
         productCode: 'CD93214121',
-        urlImage: ['../../../assets/products42/coama_lunga.jpg'],
+        urlImage: ['../../../assets/products/coama_lunga.jpg'],
         description: 'Produse din ciment performant, cu o rezistenta superioara, coamele constituie ' +
             'un accesoriu indispensabil pentru gard',
         name: 'Coama gard lunga',
@@ -165,7 +165,7 @@ export const listaProduse: Produs[] = [
 
     {
         productCode: 'CD93214121',
-        urlImage: ['../../../assets/products42/fantana_arteziana_mica.png'],
+        urlImage: ['../../../assets/products/fantana_arteziana_mica.png'],
         description: 'Fantana arteziana creeaza o atmosfera deosebita in gradina dumneavoastra. ' +
             'Sunetul linistitor al apei va ofera senzatia de calm si echilibru.',
         name: 'Fantana Arteziana mica',
@@ -180,7 +180,7 @@ export const listaProduse: Produs[] = [
 
     {
         productCode: 'CD93214121',
-        urlImage: ['../../../assets/products42/fantana_arteziana_mare.jpg'],
+        urlImage: ['../../../assets/products/fantana_arteziana_mare.jpg'],
         description: 'Fantana arteziana creeaza o atmosfera deosebita in gradina dumneavoastra. ' +
             'Sunetul linistitor al apei va ofera senzatia de calm si echilibru.',
         name: 'Fantana Arteziana mare',
@@ -195,7 +195,7 @@ export const listaProduse: Produs[] = [
 
     {
         productCode: 'CD93214121',
-        urlImage: ['../../../assets/products42/pavele_harta_gri.jpg', '../../../assets/products42/pavele_harta_rosu.jpg'],
+        urlImage: ['../../../assets/products/pavele_harta_gri.jpg', '../../../assets/products/pavele_harta_rosu.jpg'],
         description: 'Produse din ciment performant ce le ofera o rezistenta superioara, pavelele model Harta' +
             'reprezinta solutia perfecta pentru pavarea pietonala',
         name: 'Pavele Harta',
@@ -210,7 +210,7 @@ export const listaProduse: Produs[] = [
 
     {
         productCode: 'CD93214121',
-        urlImage: ['../../../assets/products42/pavele_romanita.jpg'],
+        urlImage: ['../../../assets/products/pavele_romanita.jpg'],
         description: 'Produse din ciment performant ce le ofera o rezistenta superioara, pavelele model Floral' +
             'reprezinta solutia perfecta de pavaj rutier',
         name: 'Pavele Florale',
@@ -225,7 +225,7 @@ export const listaProduse: Produs[] = [
 
     {
         productCode: 'CD93214121',
-        urlImage: ['../../../assets/products42/pavele_dale_45x45.jpg'],
+        urlImage: ['../../../assets/products/pavele_dale_45x45.jpg'],
         description: 'Produse din ciment performant ce le ofera o rezistenta superioara, pavelele model Lespede' +
             'reprezinta solutia perfecta de pavaj rutier',
         name: 'Pavele lespede',
@@ -240,7 +240,7 @@ export const listaProduse: Produs[] = [
 
     {
         productCode: 'CD93214121',
-        urlImage: ['../../../assets/products42/pavele_yeti_gri.jpg', '../../../assets/products42/pavele_yeti_rosu.jpg'],
+        urlImage: ['../../../assets/products/pavele_yeti_gri.jpg', '../../../assets/products/pavele_yeti_rosu.jpg'],
         description: 'Produse din ciment performant ce le ofera o rezistenta superioara, pavelele model Yeti' +
             'reprezinta solutia perfecta de pavaj pietonal',
         name: 'Pavele Yeti',
@@ -255,7 +255,7 @@ export const listaProduse: Produs[] = [
 
     {
         productCode: 'CD93214121',
-        urlImage: ['../../../assets/products42/piatra_z.jpg'],
+        urlImage: ['../../../assets/products/piatra_z.jpg'],
         description: 'Elemente pentru placarea fatadelor exterioare',
         name: 'Piatra decorativa Z',
         details: 'detalii',
@@ -269,7 +269,7 @@ export const listaProduse: Produs[] = [
 
     {
         productCode: 'CD93214121',
-        urlImage: ['../../../assets/products42/piatra_p.jpg'],
+        urlImage: ['../../../assets/products/piatra_p.jpg'],
         description: 'Elemente pentru placarea fatadelor exterioare',
         name: 'Piatra decorativa P',
         details: 'detalii',
@@ -283,7 +283,7 @@ export const listaProduse: Produs[] = [
 
     {
         productCode: 'CD93214121',
-        urlImage: ['../../../assets/products42/piatra_d.jpg'],
+        urlImage: ['../../../assets/products/piatra_d.jpg'],
         description: 'Elemente pentru placarea fatadelor exterioare',
         name: 'Piatra decorativa D',
         details: 'detalii',
