@@ -319,7 +319,7 @@ export const listaProduse: Produs[] = [
         urlImage: ['../../../assets/products/tigla_olan.jpg'],
         description: 'Produs din ciment performant, olanul Salbero are o rezistenta superioara si este potrivit pentru' +
             ' coamele acoperisurilor.',
-        name: 'Tigla',
+        name: 'Olan',
         details: 'detalii',
         height: '-',
         width: '-',
@@ -334,7 +334,7 @@ export const listaProduse: Produs[] = [
         urlImage: ['../../../assets/products/tigla_lateral.jpg'],
         description: 'Produs din ciment performant, laterala Salbero are o rezistenta superioara si este potrivita pentru' +
             ' inchiderea laterala a acoperisurilor.',
-        name: 'Tigla',
+        name: 'Laterala Tigla',
         details: 'detalii',
         height: '-',
         width: '-',
