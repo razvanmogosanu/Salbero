@@ -59,8 +59,7 @@ export const listaProduse: Produs[] = [
 
     {
         productCode: 'CD93214121',
-        urlImage: ['../../../assets/products/capac_neted_gri.jpg', '../../../assets/products/capac_floare_gri.jpg',
-            '../../../assets/products/capac_bob_rosu.jpg', '../../../assets/products/capac_ascutit.rosu.jpg'],
+        urlImage: ['../../../assets/products/capac_bob_rosu.jpg'],
         description: 'Produse din ciment performant, cu o rezistenta superioara, capacele constituie ' +
             'un accesoriu indispensabil pentru gard',
         name: 'Capac stalp gard bob',
@@ -75,8 +74,7 @@ export const listaProduse: Produs[] = [
 
     {
         productCode: 'CD93214121',
-        urlImage: ['../../../assets/products/capac_neted_gri.jpg', '../../../assets/products/capac_floare_gri.jpg',
-            '../../../assets/products/capac_bob_rosu.jpg', '../../../assets/products/capac_ascutit.rosu.jpg'],
+        urlImage: ['../../../assets/products/capac_neted_gri.jpg'],
         description: 'Produse din ciment performant, cu o rezistenta superioara, capacele constituie ' +
             'un accesoriu indispensabil pentru gard',
         name: 'Capac stalp gard neted',
@@ -91,11 +89,25 @@ export const listaProduse: Produs[] = [
 
     {
         productCode: 'CD93214121',
-        urlImage: ['../../../assets/products/capac_neted_gri.jpg', '../../../assets/products/capac_floare_gri.jpg',
-            '../../../assets/products/capac_bob_rosu.jpg', '../../../assets/products/capac_ascutit.rosu.jpg'],
+        urlImage: ['../../../assets/products/capac_floare_gri.jpg'],
         description: 'Produse din ciment performant, cu o rezistenta superioara, capacele constituie ' +
             'un accesoriu indispensabil pentru gard',
         name: 'Capac stalp gard floare',
+        details: 'detalii',
+        height: '-',
+        width: '30/35/40/45/50',
+        length: '30/35/40/45/50',
+        price: '14',
+        dimensionUnitMeasure: 'cm',
+        priceUnitMeasure: 'Lei / buc'
+    },
+
+    {
+        productCode: 'CD93214121',
+        urlImage: ['../../../assets/products/capac_ascutit_rosu.jpg'],
+        description: 'Produse din ciment performant, cu o rezistenta superioara, capacele constituie ' +
+            'un accesoriu indispensabil pentru gard',
+        name: 'Capac stalp gard ascutit',
         details: 'detalii',
         height: '-',
         width: '30/35/40/45/50',
@@ -213,7 +225,7 @@ export const listaProduse: Produs[] = [
 
     {
         productCode: 'CD93214121',
-        urlImage: ['../../../assets/products/pavele_romanita.jpg'],
+        urlImage: ['../../../assets/products/pavele_dale_45x45.jpg'],
         description: 'Produse din ciment performant ce le ofera o rezistenta superioara, pavelele model Lespede' +
             'reprezinta solutia perfecta de pavaj rutier',
         name: 'Pavele lespede',
