@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {SharedService} from '../../SharedService';
 import {Produs} from 'src/app/structura_produs';
 import {listaProduse} from 'src/app/lista_produse';
+import {ActivatedRoute, Router} from '@angular/router';
 
 @Component({
     selector: 'app-produse',
@@ -11,7 +12,7 @@ import {listaProduse} from 'src/app/lista_produse';
 export class ProduseComponent implements OnInit {
     produse: Produs[];
 
-    constructor(private service: SharedService) {
+    constructor(private service: SharedService, private router: Router) {
         this.resolveProducts();
     }
 
@@ -38,7 +39,8 @@ export class ProduseComponent implements OnInit {
     }
 
     getTheme() {
-        return this.service.getLink();
+        const url = this.router.url.toLowerCase();
+        return (url.includes('search')) ? 'Acestea sunt rezultatele pentru "' + this.service.getLink() + '"' : null;
     }
 
     goItem(produs: Produs) {

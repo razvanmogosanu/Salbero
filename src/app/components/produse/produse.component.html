@@ -1,25 +1,16 @@
 <div class="container">
-    <div >{{getTheme()}}</div>
+    <div>{{getTheme()}}</div>
     <hr>
     <div class="row">
-        <div *ngFor="let Produs of resolveProducts()" class="mycard">
-            <img class="mycard-image" src="{{Produs.urlImage[0]}}" alt="Card image cap" [routerLink]="['',Produs.name]" (click)="goItem(Produs)">
+        <div *ngFor="let product of resolveProducts()" class="mycard">
+            <img class="mycard-image" src="{{product.urlImage[0]}}" alt="Card image cap"
+                 [routerLink]="['',product.name]"
+                 (click)="goItem(product)">
 
-            <span class="productDescription">{{Produs.name}} {{Produs.details}} {{Produs.height}} x {{Produs.width}} {{Produs.dimensionUnitMeasure}}</span>
-            <span class="productPrice">{{Produs.price}} {{Produs.priceUnitMeasure}}</span>
+            <span class="productDescription">{{product.name}} {{product.details}} {{product.height}}
+                x {{product.width}} {{product.dimensionUnitMeasure}}</span>
+            <span class="productPrice">{{product.price}} {{product.priceUnitMeasure}}</span>
             <button type="button" class="btn btn-light see-details-btn">Vezi detalii</button>
         </div>
     </div>
 </div>
-
-<!--<div style="margin-left: 20%; margin-right: 20%; background-color: #0082E6; width: 50%">
-    <h2>Produse</h2>
-    <div *ngFor="let Produs of produse" class="card" style=" width: 100%;">
-        <img class="card-img-top" src="{{Produs.urlImage[0]}}" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">{{Produs.name}}</p>
-            <a [routerLink]="['/produse', Produs.name]" routerLinkActive="active" (click)="goItem(Produs)" class="btn btn-primary">Go somewhere</a>
-        </div>
-    </div>
-</div>-->

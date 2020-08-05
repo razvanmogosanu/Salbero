@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Produs} from '../../structura_produs';
 import {SharedService} from '../../SharedService';
-import {ActivatedRoute} from '@angular/router';
+import {ActivatedRoute, NavigationEnd, Router} from '@angular/router';
 import {listaProduse} from '../../lista_produse';
 
 @Component({
@@ -17,13 +17,19 @@ export class ItemComponent implements OnInit {
     screenWidth: number;
 
     constructor(public service: SharedService,
-                private route: ActivatedRoute) {
+                private route: ActivatedRoute,
+                private router: Router) {
     }
 
     ngOnInit() {
-        const url = this.route.snapshot.url[0];
-        console.log(url);
-        let urlString = url.toString();
+        this.router.events.subscribe((evt) => {
+            if (!(evt instanceof NavigationEnd)) {
+                return;
+            }
+            window.scrollTo(0, 0);
+        });
+
+        let urlString = this.route.snapshot.url[0].toString();
         let x = 0;
         while (x !== -1) {
             urlString = urlString.replace('%20', ' ');
@@ -38,6 +44,7 @@ export class ItemComponent implements OnInit {
             }
         }
         this.getScreenSize();
+
     }
 
     onSelect(img) {

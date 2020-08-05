@@ -25,6 +25,6 @@ export class SearchComponent implements OnInit {
     }
     reset() {
         this.service.setLink(this.myInputVariable.nativeElement.value);
-        this.myInputVariable.nativeElement.value = '';
+        // this.myInputVariable.nativeElement.value = '';
     }
 }

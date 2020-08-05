@@ -4,7 +4,7 @@
         <div class="search">
             <input #myInput (keyup)="takeInput($event)" name="searchBox" type="text" class="searchTerm "
                    placeholder="Caută un produs">
-            <button type="submit" class="searchButton" [routerLink]="['produse',inputValue]" (click)="reset()">
+            <button type="submit" class="searchButton" [routerLink]="['produse','search-'.concat(inputValue)]" (click)="reset()">
                 <i class="fa fa-search"></i>
             </button>
         </div>
