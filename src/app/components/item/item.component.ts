@@ -56,4 +56,23 @@ export class ItemComponent implements OnInit {
         this.screenWidth = window.innerWidth;
 
     }
+
+    getDecimalPart() {
+        const price = this.item.price;
+        const decimal = price.indexOf(',');
+
+        if (decimal === -1) {
+            return price;
+        }
+        return price.substr(0, decimal);
+    }
+
+    getFloatingPart() {
+        const price = this.item.price;
+        const decimal = price.indexOf(',');
+        if (decimal === -1) {
+            return '00';
+        }
+        return price.substr(decimal + 1);
+    }
 }

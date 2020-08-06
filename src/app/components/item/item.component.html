@@ -23,7 +23,6 @@
                 <div class="product-code">CP: {{item.productCode}}</div>
                 <hr style="border-top: 3px solid #D3D3D3;">
                 <p>{{item.description}}</p>
-                <!--                <p class="item-price">{{item.price}}<sup>99</sup> {{item.priceUnitMeasure}}</p>-->
                 <a href="tel:+40726841448" type="button" class="btn btn-warning call-now-button">SUNA ACUM</a>
                 <hr style="border-top: 3px solid #D3D3D3;">
             </div>
@@ -71,6 +70,8 @@
                 <img src="{{selectedImage}}" alt="selectedImg">
             </div>
 
+
+
             <div class="small-images-big-container">
                 <div *ngFor="let img of images" (click)="onSelect(img)" class="small-img-containers"
                      [class.selected]="img === selectedImage">
@@ -84,9 +85,32 @@
                 <h3>{{item.name}}</h3>
                 <hr style="border-top: 3px solid #D3D3D3;">
                 <p>{{item.description}}</p>
-                <p class="item-price">{{item.price}}<sup>99</sup> lei/ml</p>
-                <a href="tel:+40726841448" type="button" class="btn btn-primary btn-sm call-now-button">Suna acum!</a>
+                <p class="item-price">{{getDecimalPart()}}<sup>{{getFloatingPart()}}</sup> lei/ml</p>
+                <a href="tel:+40726841448" type="button" class="btn btn-primary call-now-button">Suna acum!</a>
                 <hr style="border-top: 3px solid #D3D3D3;">
+            </div>
+
+            <div>
+                <table class="content-table">
+                    <thead>
+                    <th>{{item.name}}</th>
+                    <th></th>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Grosime/Inaltime</td>
+                        <td>80</td>
+                    </tr>
+                    <tr>
+                        <td>Dimensiune</td>
+                        <td>84</td>
+                    </tr>
+                    <tr>
+                        <td>Destinatie</td>
+                        <td>Gradina</td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
 
         </div>

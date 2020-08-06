@@ -47,25 +47,22 @@ img {
 }
 
 .small-images-big-container {
+    margin-top: 5%;
+    display: flex;
 
 }
 
 .small-img-containers {
-    margin-right: 6%;
-    margin-top: 5%;
-    display: inline-block;
+    margin-right: 5%;
+    width: 20%;
 }
 
 .small-img {
-    width: 5%;
-    height: 50%;
     border-radius: 3px;
 }
 
 .small-selected-img {
     border: 2.5px solid #0082E6;
-    width: 67px;
-    height: 67px;
 }
 
 .container-title-description-price {
@@ -73,9 +70,9 @@ img {
 }
 
 .item-price {
-    color: #ef2809;
+    color: dimgray;
     font-weight: 600;
-    font-size: 22px;
+    font-size: 21px;
     font-family: Arial, sans-serif;
     white-space: nowrap;
 }
@@ -87,13 +84,20 @@ sup {
 }
 
 .call-now-button {
-    background-color: #0082E6;
-    border-radius: 5px;
+    background-color: #e78200;
+    border-color: black;
+    color: black;
 }
 
 .product-code {
     color: #B0b0b0;
     font-size: 80%
+}
+
+.big-image {
+    border-color: lightgray;
+    border-width: 1px;
+    border-style: solid;
 }
 
 
@@ -115,9 +119,9 @@ sup {
     }
 
     .big-image-container {
-        border-color: #3b3b3b;
-        border-width: 1px;
-        border-style: ridge;
+        border-color: gray;
+        border-width: 2px;
+        border-style: solid;
     }
 
     .container-title-description-price {
@@ -136,18 +140,26 @@ sup {
     }
 
     .small-images-big-container {
-        margin-top: 2%;
-        margin-left: 1%;
-        display: inline-block;
+    }
+    .small-img-containers {
+        margin-right: 5%;
+        width: 10%;
     }
 
     .small-img {
-
+        margin-right: 0;
+        overflow: hidden;
     }
 
     #small-selected-img {
+        margin-right: 0;
+        width: 11%;
 
     }
+    img {
+        width: 100%;
+    }
+
 }
 
 
