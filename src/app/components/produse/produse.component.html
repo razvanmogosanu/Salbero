@@ -7,10 +7,11 @@
                  [routerLink]="['',product.name]"
                  (click)="goItem(product)">
 
-            <p class="productDescription">{{product.name}} {{product.details}} {{product.height}}
-                x {{product.width}} {{product.dimensionUnitMeasure}}</p>
+            <p class="productDescription">{{product.name}}</p>
+            <hr style="margin-top: 0">
             <p class="productPrice">{{product.price}} {{product.priceUnitMeasure}}</p>
-            <button type="button" class="btn btn-light see-details-btn" style="color: lightgray">Vezi detalii</button>
+            <button type="button" class="btn btn-light see-details-btn" [routerLink]="['',product.name]"
+                    (click)="goItem(product)" style="color: lightgray">Vezi detalii</button>
         </div>
     </div>
 </div>
