@@ -5,6 +5,7 @@ export interface Produs {
     description: string;
     details: string;
     height: string;
+    thickness: string;
     width: string;
     length: string;
     price: string;
