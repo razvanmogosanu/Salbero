@@ -47,7 +47,10 @@
     outline: 0;
 }
 
-img{width: 80%; height: 70%}
+img{
+    width: 80%;
+    height: 70%;
+}
 
 @media only screen and (min-width: 768px) {
 
@@ -217,7 +220,7 @@ img{width: 80%; height: 70%}
 
     .logo {
         display: flex;
-        margin-top: -7%;
+        margin-top: -7.5%;
     }
 }
 
@@ -229,7 +232,7 @@ img{width: 80%; height: 70%}
 
     .logo {
         display: flex;
-        margin-top: -6%;
+        margin-top: -6.5%;
     }
 }
 
@@ -243,7 +246,7 @@ img{width: 80%; height: 70%}
 @media (max-width: 1850px) and (min-width: 1500px) {
     .logo {
         display: flex;
-        margin-top: -4%
+        margin-top: -4.5%;
     }
 }
 
@@ -251,7 +254,7 @@ img{width: 80%; height: 70%}
 @media (max-width: 2050px) and (min-width: 1850px) {
     .logo {
         display: flex;
-        margin-top: -3.5%
+        margin-top: -4%;
     }
 }
 
