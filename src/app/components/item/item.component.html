@@ -9,6 +9,8 @@
 </head>
 
 <body>
+<br>
+<br>
 <div *ngIf="screenWidth > 600; then desktopBlock else mobileBlock"></div>
 <ng-template #desktopBlock>
     <div class="container-produs">
@@ -23,6 +25,7 @@
                 <div class="product-code">CP: {{item.productCode}}</div>
                 <hr style="border-top: 3px solid #D3D3D3;">
                 <p>{{item.description}}</p>
+                <p class="item-price">{{getDecimalPart()}}<sup>{{getFloatingPart()}}</sup> lei/ml</p>
                 <a href="tel:+40726841448" type="button" class="btn btn-warning call-now-button">SUNA ACUM</a>
                 <hr style="border-top: 3px solid #D3D3D3;">
             </div>

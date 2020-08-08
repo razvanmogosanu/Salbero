@@ -1,6 +1,11 @@
 <div class="container">
-    <div>{{getTheme()}}</div>
-    <hr>
+    <br>
+<!--    once, a very long time ago, this was an idea-->
+<!--    <div class="products-header">-->
+<!--        <span class="products-header-theme">Produse gasite </span>-->
+<!--        <span class="products-header-nof-products">{{getNofProducts()}}</span>-->
+<!--    </div>-->
+
     <div class="row">
         <div *ngFor="let product of resolveProducts()" class="mycard">
             <img class="mycard-image" src="{{product.urlImage[0]}}" alt="Card image cap"
@@ -11,7 +16,8 @@
             <hr style="margin-top: 0">
             <p class="productPrice">{{product.price}} {{product.priceUnitMeasure}}</p>
             <button type="button" class="btn btn-light see-details-btn" [routerLink]="['',product.name]"
-                    (click)="goItem(product)" style="color: lightgray">Vezi detalii</button>
+                    (click)="goItem(product)" style="color: lightgray">Vezi detalii
+            </button>
         </div>
     </div>
 </div>

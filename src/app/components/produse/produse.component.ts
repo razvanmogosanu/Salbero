@@ -39,8 +39,25 @@ export class ProduseComponent implements OnInit {
     }
 
     getTheme() {
+        let url = this.router.url.toLowerCase();
+        console.log(url);
+        // tslint:disable-next-line:max-line-length
+        if (url.includes('search')) {
+            return 'Acestea sunt rezultatele pentru "' + this.service.getLink() + '"';
+        } else {
+            url = url.substr(8);
+            if (url.length < 1) {
+                return 'Disponibile ';
+            } else {
+                return url;
+            }
+        }
+
+    }
+
+    getNofProducts() {
         const url = this.router.url.toLowerCase();
-        return (url.includes('search')) ? 'Acestea sunt rezultatele pentru "' + this.service.getLink() + '"' : null;
+        return this.produse.length + ' de produse.';
     }
 
     goItem(produs: Produs) {
