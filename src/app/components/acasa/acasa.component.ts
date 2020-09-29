@@ -13,6 +13,7 @@ export class AcasaComponent implements OnInit {
     }
 
     ngOnInit(): void {
+        window.scrollTo(0, 0);
     }
     setTheme(theme: string) {
       this.service.setLink(theme);

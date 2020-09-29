@@ -3,12 +3,13 @@ export interface Produs {
     urlImage: string[];
     name: string;
     description: string;
-    details: string;
+    detailsPrices: string;
     height: string;
     thickness: string;
     width: string;
     length: string;
     price: string;
-    dimensionUnitMeasure: string;
+    purpose: string;
     priceUnitMeasure: string;
+    tags: string[];
 }

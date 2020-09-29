@@ -19,7 +19,6 @@ export class ProduseComponent implements OnInit {
     resolveProducts() {
         this.produse = [];
         let theme = this.service.getLink();
-
         if (theme === 'produse') {
             this.produse = listaProduse;
         } else {
@@ -35,7 +34,6 @@ export class ProduseComponent implements OnInit {
     }
 
     ngOnInit(): void {
-
     }
 
     getTheme() {

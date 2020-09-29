@@ -22,6 +22,7 @@ export class ItemComponent implements OnInit {
     }
 
     ngOnInit() {
+        window.scrollTo(0, 0);
         this.router.events.subscribe((evt) => {
             if (!(evt instanceof NavigationEnd)) {
                 return;
@@ -43,8 +44,8 @@ export class ItemComponent implements OnInit {
                 break;
             }
         }
-        this.getScreenSize();
 
+        this.getScreenSize();
     }
 
     onSelect(img) {
@@ -59,7 +60,7 @@ export class ItemComponent implements OnInit {
 
     getDecimalPart() {
         const price = this.item.price;
-        const decimal = price.indexOf(',');
+        const decimal = price.indexOf('.');
 
         if (decimal === -1) {
             return price;
@@ -69,7 +70,7 @@ export class ItemComponent implements OnInit {
 
     getFloatingPart() {
         const price = this.item.price;
-        const decimal = price.indexOf(',');
+        const decimal = price.indexOf('.');
         if (decimal === -1) {
             return '00';
         }

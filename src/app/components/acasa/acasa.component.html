@@ -2,60 +2,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="constructii, prefabricate, beton, ciment, acasa, salbero, materiale, gorj"/>
-    <meta name="author" content="Salbero S.R.L.">
-    <meta name="description"
-          content="Panouri de gard, boltari, pavele, spalieri, fantana arteziana si alte materiale prefabricate din beton produse din ciment de inalta calitate, foarte rezistente.">
+    <meta name="author" content="Salbero">
+    <meta name="description" content="Panouri de gard, boltari, pavele, spalieri, fantana arteziana si alte materiale
+     prefabricate din beton produse din ciment de inalta calitate, foarte rezistente.">
     <title>Salbero - Producator Gard, Boltari, Pavele si prefabricate din beton </title>
 </head>
 <body>
 <div class="text-center">
-<!--    <img id="acasa-image" >-->
 </div>
 <br>
 <div class="prod-menu">
     <!--Gard-->
     <div class="row">
-        <img class="prod-img" src="http://www.konkretline.ro/wp-content/uploads/2020/04/MODERN.jpg"/>
+        <img class="prod-img" src="../../../assets/products/acasa_gard.jpg"/>
         <div class="prod-content">
             <h4>Garduri</h4>
-            <p>Placi de gard prefabricate din beton</p>
-            <p>moderne, durabile</p>
-            <div [routerLink]="['/produse', 'gard']" routerLinkActive="active" (click)="setTheme('gard')" class="btn btn-light">Vezi mai mult</div>
+            <p>Placi de gard produse din ciment superior si armate cu fier beton</p>
+            <p>moderne si durabile.</p>
+            <div [routerLink]="['/produse', 'gard']" routerLinkActive="active"
+                 (click)="setTheme('gard')" class="btn btn-light">Vezi mai mult</div>
         </div>
     </div>
     <br>
     <br>
     <!--Boltari-->
     <div class="row">
-        <img class="prod-img"
-             src="https://i.dedeman.ro/media/catalog/product/cache/dedeman/image/9df78eab33525d08d6e5fb8d27136e95/6/0/6018410.jpg"/>
+        <img class="prod-img" src="../../../assets/products/acasa_boltar.jpg"/>
         <div class="prod-content">
             <h4>Boltari</h4>
-            <p>Boltari de zidarie din beton vibropresat</p>
-            <div (click)="setTheme('Boltari')" class="btn btn-light">Vezi mai mult</div>
+            <p>Boltari de zidarie produsi din beton vibropresat.</p>
+            <div [routerLink]="['/produse', 'boltar']" routerLinkActive="active"
+                 (click)="setTheme('boltar')" class="btn btn-light">Vezi mai mult</div>
         </div>
     </div>
     <br>
     <br>
-    <!--Spaleri-->
+    <!--Capace si Coame de gard-->
     <div class="row">
-        <img class="prod-img" src="https://frankfurt.apollo.olxcdn.com/v1/files/q0tpabur3sfp3-RO/image;s=1000x700"/>
+        <img class="prod-img" src="../../../assets/products/acasa_capac.jpg"/>
         <div class="prod-content">
-            <h4>Spalieri</h4>
-            <p>Spalieri produsi </p>
-            <div (click)="setTheme('spalier')" class="btn btn-light">Vezi mai mult</div>
-        </div>
-    </div>
-    <br>
-    <br>
-    <!--Pavele-->
-    <div class="row">
-        <img class="prod-img"
-             src="https://elis.ro/public/upload/images/product/2020/02/cache/5e54481d0e1cc5.77172136.360x458-adaptive.jpg"/>
-        <div class="prod-content">
-            <h4>Pavele</h4>
-            <p>Boltari de zidarie din beton vibropresat</p>
-            <div (click)="setTheme('pavel')" class="btn btn-light">Vezi mai mult</div>
+            <h4>Capace si Coame de gard</h4>
+            <p>Accesoriile de gard au rolul de a completa aspectul.</p>
+            <div [routerLink]="['/produse', 'capac']" routerLinkActive="active"
+                 (click)="setTheme('capac')" class="btn btn-light">Vezi mai mult</div>
         </div>
     </div>
     <br>
@@ -63,70 +52,76 @@
     <!--Fantana Arteziana-->
     <div class="row">
         <img class="prod-img"
-             src="https://www.piatraonline.ro/userfiles/19370a59-92cf-454a-b230-f7886006c901/products/451225_big.jpg"/>
+             src="../../../assets/products/acasa_fantana.png"/>
         <div class="prod-content">
-            <h4>Fantana Arteziana</h4>
-            <p>Boltari de zidarie din beton vibropresat</p>
-            <div (click)="'fantana'" class="btn btn-light">Vezi mai mult</div>
+            <h4>Fantani Arteziene</h4>
+            <p>Creata special pentru completarea gradinii, fantana arteziana reprezinta un obiect principal in decorarea acesteia.</p>
+            <p>Descopera produsele noastre si alege-o pe cea perfecta pentru tine.</p>
+            <div [routerLink]="['/produse', 'fantana']" routerLinkActive="active"
+                 (click)="setTheme('fantana')" class="btn btn-light">Vezi mai mult</div>
         </div>
     </div>
     <br>
     <br>
-    <!--Tigla-->
+    <!--Spalieri-->
+    <div class="row">
+        <img class="prod-img" src="../../../assets/products/acasa_spalieri.jpg"/>
+        <div class="prod-content">
+            <h4>Spalieri / Stalpi</h4>
+            <p>Rezistenti, armati cu fier beton Ø6mm, ideali pentru garduri sau sustinerea viei.</p>
+            <div [routerLink]="['/produse', 'spalier']" routerLinkActive="active"
+                 (click)="setTheme('spalier')" class="btn btn-light">Vezi mai mult</div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!--Piatra Decorativa-->
     <div class="row">
         <img class="prod-img"
-             src="data:image/jpeg;base64,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PR/hsBuykjJve79qS3htk2WyMYAAAAANAMgtI4aOfJ5tqkjlbvQnA6MXqXtltm5rG7F+TTn/AJKRhHoWo4yDPLJOeAtGw+Qu7/JdORacInK/IyP3+xDwrCoKZnVwRMjbwaLX5k6uPMqYiK5k227YREQgIiIAiIgCIiAIiIAvEsYc0tcAWuBBB0IIsQV7RAfM3pAwB1JVPZns3yPEEXY7zaCCd7mSLzhFR1sJjJ7cfaZfe2/ab78x/cuuemHBmSUhqDkYhZ537LiLHmWv2T/SZAO8uDYLhctXM2CGNz3HMhoBsBq43IAA4kgaLlnj3R6+HPcVI3eT76ESeuyzZOY0a7/Sf7Vr9ay2au5/R1i9OS2FrnsOV2SMAI5guuFIw30QYhMQZ3xwt33d1j/IN7PxCp/abNV5UIrtfmaHPXG9mGx/Npbw+q2KHo9isQbOyGd4IDgere48cxbaXZuiHo2o6EiQNM0w/wCZJY2PsN0b45nmtyWyw6OOfm70fOP/AAXG645wzWO94ELf8rLbuivoYAIkrpQ7f1URIH9z8j5Nt4rsCK6xpGEvKm9LRHoqGKKMRRRtYwCwa0AN9y9w07GdxjW312QB8llRaHPbCIiEBERAEREAREQBERAEREAREQBERAEREAREQEXFKBlRDJBKLskY5jhycLZcDzUDox0XpqCMx00ezc3c4m73HdtO323DQK5RCbdUEREICIiAIiIAiIgCIiAIiIAiIgCIiALA+nJJO28X3Aiwytll5rOiCzxscz70XtEAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBEXgyDiPegPaL82hxCID9REQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBVk/4jvH/AEBEUMvDsskRFJU//9k="/>
+             src="../../../assets/products/acasa_piatra.jpg"/>
         <div class="prod-content">
-            <h4>Tigla</h4>
-            <p>Boltari de zidarie din beton vibropresat</p>
-            <div (click)="setTheme('tigla')" class="btn btn-light">Vezi mai mult</div>
+            <h4>Piatra Decorativa</h4>
+            <p>Se monteaza pe fatadele exterioare oferind un aspect unic si placut.</p>
+            <div [routerLink]="['/produse', 'piatra']" routerLinkActive="active"
+                 (click)="setTheme('piatra')" class="btn btn-light">Vezi mai mult</div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!--Pavele-->
+    <div class="row">
+        <img class="prod-img"
+             src="../../../assets/products/acasa_pavea.jpg"/>
+        <div class="prod-content">
+            <h4>Pavele</h4>
+            <p>Amenajeaza spatiile exterioare rezidentiale cu pavele pietonale sau pentru trafic auto.</p>
+            <div [routerLink]="['/produse', 'pavele']" routerLinkActive="active"
+                 (click)="setTheme('pavele')" class="btn btn-light">Vezi mai mult</div>
         </div>
     </div>
     <br>
     <br>
     <!--Borduri-->
     <div class="row">
-        <img class="prod-img"
-             src="https://i.dedeman.ro/media/catalog/product/cache/dedeman/image/9df78eab33525d08d6e5fb8d27136e95/6/0/6017090_3.jpg"/>
+        <img class="prod-img" src="../../../assets/products/acasa_bordura.jpg"/>
         <div class="prod-content">
             <h4>Borduri</h4>
-            <p>Boltari de zidarie din beton vibropresat</p>
-            <div (click)="setTheme('bordur')" class="btn btn-light">Vezi mai mult</div>
-            </div>
+            <p>Delimitarea aleilor exterioare nu a fost niciodata mai simpla.</p>
+            <div [routerLink]="['/produse', 'bordur']" routerLinkActive="active"
+                 (click)="setTheme('bordur')" class="btn btn-light">Vezi mai mult</div>
         </div>
-        <br>
-        <br>
-        <!--Caciuli si Coame de gard-->
-        <div class="row">
-            <img class="prod-img" src="https://frankfurt.apollo.olxcdn.com/v1/files/14mswrk65f7j-RO/image;s=1000x700"/>
-            <div class="prod-content">
-                <h4>Tigla</h4>
-                <p>Boltari de zidarie din beton vibropresat</p>
-                <div (click)="setTheme('caciuli')" class="btn btn-light">Vezi mai mult</div>
-            </div>
-        </div>
-        <br>
-        <!--Piatra Decorativa-->
-            <div class="row">
-                <img class="prod-img"
-                     src="https://www.hornbach.ro/data/shop/D04/001/780/491/364/151/DV_8_6667529_01_4c_RO_20180515082755.jpg"/>
-                <div class="prod-content">
-                    <h4>Piatra Decorativa</h4>
-                    <p>Boltari de zidarie din beton vibropresat</p>
-                    <div (click)="setTheme('piatra')" class="btn btn-light">Vezi mai mult</div>
-                </div>
-            </div>
-        <br>
-        <br>
-        <!--Jardiniere-->
-            <div class="row">
-                <img class="prod-img"
-                     src="https://www.hornbach.ro/data/shop/D04/001/780/494/267/43/DV_8_8344174_03_4c_RO_20180226145513.jpg"/>
-                <div class="prod-content">
-                    <h4>Jardiniere</h4>
-                    <p>Boltari de zidarie din beton vibropresat</p>
-                    <div [routerLink]="['/produse', 'jardiniera']" routerLinkActive="active" (click)="setTheme('jardini')" class="btn btn-light">Vezi mai mult</div>
-                </div>
-            </div>
     </div>
+    <br>
+    <br>
+    <!--Tigla-->
+    <div class="row">
+        <img class="prod-img" src="../../../assets/products/acasa_tigla.jpg"/>
+        <div class="prod-content">
+            <h4>Tigla si Olane</h4>
+            <p>Pentru acoperisuri clasice si rezistente, alege tigla Salbero.</p>
+            <div [routerLink]="['/produse', 'tigla']" routerLinkActive="active"
+                 (click)="setTheme('tigla')" class="btn btn-light">Vezi mai mult</div>
+        </div>
+    </div>
+</div>
 </body>

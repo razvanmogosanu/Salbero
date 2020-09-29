@@ -21,11 +21,11 @@
             </div>
 
             <div class="container-title-description-price">
-                <h3>{{item.name}}, {{item.height}} x {{item.width}} {{item.dimensionUnitMeasure}}</h3>
+                <h3>{{item.name}}</h3>
                 <div class="product-code">CP: {{item.productCode}}</div>
                 <hr style="border-top: 3px solid #D3D3D3;">
                 <p>{{item.description}}</p>
-                <p class="item-price">{{getDecimalPart()}}<sup>{{getFloatingPart()}}</sup> lei/ml</p>
+                <p class="item-price">{{getDecimalPart()}}<sup>{{getFloatingPart()}}</sup> {{item.priceUnitMeasure}}</p>
                 <a href="tel:+40726841448" type="button" class="btn btn-warning call-now-button">SUNA ACUM</a>
                 <hr style="border-top: 3px solid #D3D3D3;">
             </div>
@@ -43,25 +43,33 @@
         <div>
             <table class="content-table">
                 <thead>
-                <th>{{item.name}}</th>
+                <th>Detalii</th>
                 <th></th>
                 </thead>
                 <tbody>
-                <tr>
-                    <td>Grosime/Inaltime</td>
+                <tr *ngIf="item.height != '-'">
+                    <td>Inaltime</td>
                     <td>{{item.height}}</td>
                 </tr>
-                <tr>
+                <tr *ngIf="item.thickness != '-'">
+                    <td>Grosime</td>
+                    <td>{{item.thickness}}</td>
+                </tr>
+                <tr *ngIf="item.width != '-'">
                     <td>Latime</td>
                     <td>{{item.width}}</td>
                 </tr>
-                <tr>
+                <tr *ngIf="item.length != '-'">
                     <td>Lungime</td>
                     <td>{{item.length}}</td>
                 </tr>
+                <tr *ngIf="item.detailsPrices != '-'">
+                    <td>Preturi</td>
+                    <td>{{item.detailsPrices}}</td>
+                </tr>
                 <tr>
-                    <td>Destinatie</td>
-                    <td>Gradina</td>
+                    <td>Utilizare</td>
+                    <td>{{item.purpose}}</td>
                 </tr>
                 </tbody>
             </table>
@@ -100,21 +108,33 @@
             <div>
                 <table class="content-table">
                     <thead>
-                    <th>{{item.name}}</th>
+                    <th>Detalii</th>
                     <th></th>
                     </thead>
                     <tbody>
-                    <tr>
-                        <td>Grosime/Inaltime</td>
-                        <td>80</td>
+                    <tr *ngIf="item.height != '-'">
+                        <td>Inaltime</td>
+                        <td>{{item.height}}</td>
+                    </tr>
+                    <tr *ngIf="item.thickness != '-'">
+                        <td>Grosime</td>
+                        <td>{{item.thickness}}</td>
+                    </tr>
+                    <tr *ngIf="item.width != '-'">
+                        <td>Latime</td>
+                        <td>{{item.width}}</td>
+                    </tr>
+                    <tr *ngIf="item.length != '-'">
+                        <td>Lungime</td>
+                        <td>{{item.length}}</td>
+                    </tr>
+                    <tr *ngIf="item.detailsPrices != '-'">
+                        <td>Preturi</td>
+                        <td>{{item.detailsPrices}}</td>
                     </tr>
                     <tr>
-                        <td>Dimensiune</td>
-                        <td>84</td>
-                    </tr>
-                    <tr>
-                        <td>Destinatie</td>
-                        <td>Gradina</td>
+                        <td>Utilizare</td>
+                        <td>{{item.purpose}}</td>
                     </tr>
                     </tbody>
                 </table>
