@@ -33,11 +33,11 @@ export class ItemComponent implements OnInit {
         let urlString = this.route.snapshot.url[0].toString();
         let x = 0;
         while (x !== -1) {
-            urlString = urlString.replace('%20', ' ');
-            x = urlString.indexOf('%20');
+            urlString = urlString.replace('-', ' ');
+            x = urlString.indexOf('-');
         }
         for (const produs of listaProduse) {
-            if (produs.name === urlString) {
+            if (produs.name.toLocaleLowerCase() === urlString) {
                 this.item = produs;
                 this.images = produs.urlImage;
                 this.selectedImage = this.images[0];

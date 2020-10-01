@@ -62,4 +62,13 @@ export class ProduseComponent implements OnInit {
         this.service.setItem(produs);
     }
 
+    translateProductNameInLink(product: Produs) {
+        let name = product.name;
+        let x = 0;
+        while (x !== -1) {
+            name = name.replace(' ', '-');
+            x = name.indexOf(' ');
+        }
+        return name.toLocaleLowerCase();
+    }
 }

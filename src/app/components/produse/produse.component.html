@@ -1,23 +1,35 @@
-<div class="container">
-    <br>
-<!--    once, a very long time ago, this was an idea-->
-<!--    <div class="products-header">-->
-<!--        <span class="products-header-theme">Produse gasite </span>-->
-<!--        <span class="products-header-nof-products">{{getNofProducts()}}</span>-->
-<!--    </div>-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="gard, tigla, fantana arteziana, boltari, jardiniere, vaze, targu jiu,
+                                   borduri, pavele, gorj, copacioasa, scoarta, capace, coame"/>
+    <meta name="description" content="">
+    <meta name="author" content="Salbero S.R.L.">
+    <title>Salbero - Producator Gard, Boltari, Pavele si alte prefabricate din beton </title>
+</head>
 
-    <div class="row">
-        <div *ngFor="let product of resolveProducts()" class="mycard">
-            <img class="mycard-image" src="{{product.urlImage[0]}}" alt="Card image cap"
-                 [routerLink]="['',product.name]"
-                 (click)="goItem(product)">
+<body>
+    <div class="container">
+        <br>
+    <!--    once, a very long time ago, this was an idea-->
+    <!--    <div class="products-header">-->
+    <!--        <span class="products-header-theme">Produse gasite </span>-->
+    <!--        <span class="products-header-nof-products">{{getNofProducts()}}</span>-->
+    <!--    </div>-->
 
-            <p class="productDescription">{{product.name}}</p>
-            <hr style="margin-top: 0">
-            <p class="productPrice">{{product.price}} {{product.priceUnitMeasure}}</p>
-            <button type="button" class="btn btn-light see-details-btn" [routerLink]="['',product.name]"
-                    (click)="goItem(product)">Vezi detalii
-            </button>
+        <div class="row">
+            <div *ngFor="let product of resolveProducts()" class="mycard">
+                <img class="mycard-image" src="{{product.urlImage[0]}}" alt="Card image cap"
+                     [routerLink]="['', translateProductNameInLink(product)]"
+                     (click)="goItem(product)">
+
+                <p class="productDescription">{{product.name}}</p>
+                <hr style="margin-top: 0">
+                <p class="productPrice">{{product.price}} {{product.priceUnitMeasure}}</p>
+                <button type="button" class="btn btn-light see-details-btn" [routerLink]="['',product.name]"
+                        (click)="goItem(product)">Vezi detalii
+                </button>
+            </div>
         </div>
     </div>
-</div>
+</body>
