@@ -1,5 +1,5 @@
 <div id="wrap-phone">
-    <img id="phone-icon" src="../../../assets/phone.png">
+    <img id="phone-icon" src="../../../assets/phone.png" alt="telefon">
     <a class="phone" id="first-phone" href="tel:+40729352586"> +40 729 352 586</a>
     <a class="phone" href="tel:+40729333207"> / +40 729 333 207</a>
 </div>
@@ -25,35 +25,35 @@
                    id="navbarDropdownMenuLink">
                     Produse
                 </a>
-                <div ngbDropdownMenu class="{{dropdownClass}}" style="margin-top: 0" (click)="setDropdown(false)">
-                    <div class="dropdown-item" style="color: black; font-weight: 300" [routerLink]="['produse','gard']"
+                <div ngbDropdownMenu class="{{dropdownClass}}" (click)="setDropdown(false)">
+                    <div class="dropdown-item" [routerLink]="['produse','gard']"
                          (click)="setTheme('gard')">Gard
                     </div>
-                    <div class="dropdown-item" style="color: black; font-weight: 300" [routerLink]="['/produse','spalier']"
+                    <div class="dropdown-item" [routerLink]="['/produse','spalier']"
                          (click)="setTheme('spalier')">Stalpi/Spalieri
                     </div>
-                    <div class="dropdown-item" style="color: black; font-weight: 300" [routerLink]="['/produse','boltari']"
+                    <div class="dropdown-item" [routerLink]="['/produse','boltari']"
                          (click)="setTheme('boltar')">Boltari
                     </div>
-                    <div class="dropdown-item" style="color: black; font-weight: 300" [routerLink]="['/produse', 'pavele']"
+                    <div class="dropdown-item" [routerLink]="['/produse', 'pavele']"
                          (click)="setTheme('pavel')">Pavele
                     </div>
-                    <div class="dropdown-item" style="color: black; font-weight: 300" [routerLink]="['/produse', 'tigla']"
+                    <div class="dropdown-item" [routerLink]="['/produse', 'tigla']"
                          (click)="setTheme('tigla')">Țiglă si Olane
                     </div>
-                    <div class="dropdown-item" style="color: black; font-weight: 300" [routerLink]="['/produse', 'bordur']"
+                    <div class="dropdown-item" [routerLink]="['/produse', 'bordur']"
                          (click)="setTheme('bordur')">Borduri
                     </div>
-                    <div class="dropdown-item" style="color: black; font-weight: 300" [routerLink]="['/produse', 'capac']"
+                    <div class="dropdown-item" [routerLink]="['/produse', 'capac']"
                          (click)="setTheme('capac')">Capace si Coame gard
                     </div>
-                    <div class="dropdown-item" style="color: black; font-weight: 300" [routerLink]="['/produse', 'fantana']"
+                    <div class="dropdown-item" [routerLink]="['/produse', 'fantana']"
                          (click)="setTheme('fantana')">Fantană Arteziană
                     </div>
-                    <div class="dropdown-item" style="color: black; font-weight: 300"  [routerLink]="['/produse', 'piatra']"
+                    <div class="dropdown-item"  [routerLink]="['/produse', 'piatra']"
                          (click)="setTheme('piatra')">Piatră Decorativă
                     </div>
-                    <div class="dropdown-item" style="color: black; font-weight: 300" [routerLink]="['/produse', 'jardinier']"
+                    <div class="dropdown-item" [routerLink]="['/produse', 'jardinier']"
                          (click)="setTheme('jardinier')">Jardiniere
                     </div>
                 </div>

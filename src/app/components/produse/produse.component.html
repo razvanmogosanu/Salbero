@@ -1,11 +1,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="gard, tigla, fantana arteziana, boltari, jardiniere, vaze, targu jiu,
-                                   borduri, pavele, gorj, copacioasa, scoarta, capace, coame"/>
-    <meta name="description" content="">
+    <meta name="keywords" content="salbero, gard, placi, de, beton, din, tigla, fantana, fantani, arteziene, arteziana,
+                                   boltari, jardiniere, vaze, targu jiu, borduri, pavele, gorj, copacioasa, scoarta, capace,
+                                   coame, piatra decorativa, accesorii garduri"/>
+    <meta name="description" content="Placi de gard de beton insotite de accesorii din beton de inalta performanta,
+                                      boltari rezistenti, fantani arteziene superbe, pavele pietonale si rutiere,
+                                      piatra decorativa, tigla clasica, stalpi, spalieri, precum
+                                      si o multime de alte prefabricate din ciment de cea mai buna calitate produse in
+                                      Targu Jiu si Copacioasa, Gorj">
     <meta name="author" content="Salbero S.R.L.">
-    <title>Salbero - Producator Gard, Boltari, Pavele si alte prefabricate din beton </title>
+    <title>Salbero - Producator de Garduri, Boltari, Pavele si alte prefabricate din beton </title>
 </head>
 
 <body>
@@ -24,9 +29,9 @@
                      (click)="goItem(product)">
 
                 <p class="productDescription">{{product.name}}</p>
-                <hr style="margin-top: 0">
+                <hr>
                 <p class="productPrice">{{product.price}} {{product.priceUnitMeasure}}</p>
-                <button type="button" class="btn btn-light see-details-btn" [routerLink]="['',product.name]"
+                <button type="button" class="btn btn-light see-details-btn" [routerLink]="['', translateProductNameInLink(product)]"
                         (click)="goItem(product)">Vezi detalii
                 </button>
             </div>

@@ -1,33 +1,6 @@
-
-
 .container {
     background-color: #e9ebee;
 }
-
-/*.products-header {*/
-/*    background-color: white;*/
-/*    margin-left: -2%;*/
-/*    margin-bottom: 2%;*/
-/*    border-style: solid;*/
-/*    border-width: 1px;*/
-/*    border-color: ghostwhite;*/
-/*}*/
-
-/*.products-header-theme {*/
-/*    margin-left: 5%;*/
-/*    font-size: 20px;*/
-/*    font-family: "Open Sans";*/
-/*    color: #3b3b3b;*/
-
-/*}*/
-
-/*.products-header-nof-products {*/
-/*    margin-left: 5%;*/
-/*    font-size: 18px;*/
-/*    font-family: "Open Sans";*/
-/*    color: #3b3b3b;*/
-
-/*}*/
 
 .mycard {
     width: 48%;
@@ -42,8 +15,8 @@
 .mycard-image {
     width: 100%;
     height: 100%;
+    cursor: pointer;
 }
-
 
 .see-details-btn {
     background-color: #0082E6;
@@ -52,6 +25,7 @@
     margin-left: 15%;
     margin-right: 15%;
     margin-bottom: 2%;
+    cursor: pointer;
 }
 
 .productDescription{
@@ -69,15 +43,12 @@
 
 .productPrice {
     /* like this */
-
     text-align: center;
     font-size: 15px;
     font-weight: 600;
     color: #e78200;
 
-
 /*    or like this */
-
     /*text-align: center;*/
     /*font-size: 15px;*/
     /*font-weight: 500;*/
@@ -85,20 +56,11 @@
 }
 
 @media only screen and (min-width: 768px) {
-
-
     .container {
         background-color: white;
     }
 
     .mycard {
         width: 30%;
-    }
-
-    .myrow {
-    }
-
-    .mycard-image {
-
     }
 }

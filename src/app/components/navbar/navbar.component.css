@@ -33,6 +33,11 @@
     text-align: right;
 }
 
+.dropdown-item{
+    color: black;
+    font-weight: 300;
+}
+
 /*-----------------Phone Number-------------------*/
 #wrap-phone{
     text-align: right;
@@ -52,9 +57,6 @@
 
 @media only screen and (min-width: 768px) {
     #wrap-phone{
-        text-align: right;
         margin-top: 0.5%;
     }
-
-
 }

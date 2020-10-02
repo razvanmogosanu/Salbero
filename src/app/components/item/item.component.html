@@ -1,115 +1,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="gard, {{item.name}}, tigla, fantana arteziana, boltari, jardiniere, vaze, targu jiu,
-                                   borduri, pavele, {{item.tags}}, gorj, copacioasa, scoarta"/>
+    <meta name="keywords" content="{{item.name}}, {{item.tags}}, gorj, copacioasa, scoarta, targu jiu,"/>
     <meta name="description" content="{{item.description}}">
     <meta name="author" content="Salbero S.R.L.">
     <title>Salbero - Producator Gard, Boltari, Pavele si alte prefabricate din beton </title>
 </head>
 
 <body>
-<br>
-<br>
-<div *ngIf="screenWidth > 600; then desktopBlock else mobileBlock"></div>
-<ng-template #desktopBlock>
-    <div class="container-produs">
-        <div class="container-upper-part">
+    <br>
+    <br>
+    <div *ngIf="screenWidth > 600; then desktopBlock else mobileBlock"></div>
+    <ng-template #desktopBlock>
+        <div class="container-produs">
+            <div class="container-upper-part">
 
-            <div class="big-image-container">
-                <img class="big-image" src="{{selectedImage}}" alt="selectedImg">
+                <div class="big-image-container">
+                    <img class="big-image" src="{{selectedImage}}" alt="selectedImg">
+                </div>
+
+                <div class="container-title-description-price">
+                    <h3>{{item.name}}</h3>
+                    <div class="product-code">CP: {{item.productCode}}</div>
+                    <hr>
+                    <p>{{item.description}}</p>
+                    <p class="item-price">{{getDecimalPart()}}<sup>{{getFloatingPart()}}</sup> {{item.priceUnitMeasure}}</p>
+                    <a href="tel:+40726841448" type="button" class="btn btn-warning call-now-button">SUNA ACUM</a>
+                    <hr>
+                </div>
             </div>
-
-            <div class="container-title-description-price">
-                <h3>{{item.name}}</h3>
-                <div class="product-code">CP: {{item.productCode}}</div>
-                <hr style="border-top: 3px solid #D3D3D3;">
-                <p>{{item.description}}</p>
-                <p class="item-price">{{getDecimalPart()}}<sup>{{getFloatingPart()}}</sup> {{item.priceUnitMeasure}}</p>
-                <a href="tel:+40726841448" type="button" class="btn btn-warning call-now-button">SUNA ACUM</a>
-                <hr style="border-top: 3px solid #D3D3D3;">
-            </div>
-        </div>
-
-        <div class="small-images-big-container">
-            <div *ngFor="let img of images" (click)="onSelect(img)" class="small-img-containers"
-                 [class.selected]="img === selectedImage">
-                <div *ngIf="img === selectedImage; then thenBlock else elseBlock"></div>
-                <ng-template #thenBlock><img src="{{img}}" class="small-img small-selected-img"></ng-template>
-                <ng-template #elseBlock><img src="{{img}}" class="small-img"></ng-template>
-            </div>
-        </div>
-
-        <div>
-            <table class="content-table">
-                <thead>
-                <th>Detalii</th>
-                <th></th>
-                </thead>
-                <tbody>
-                <tr *ngIf="item.height != '-'">
-                    <td>Inaltime</td>
-                    <td>{{item.height}}</td>
-                </tr>
-                <tr *ngIf="item.thickness != '-'">
-                    <td>Grosime</td>
-                    <td>{{item.thickness}}</td>
-                </tr>
-                <tr *ngIf="item.width != '-'">
-                    <td>Latime</td>
-                    <td>{{item.width}}</td>
-                </tr>
-                <tr *ngIf="item.length != '-'">
-                    <td>Lungime</td>
-                    <td>{{item.length}}</td>
-                </tr>
-                <tr *ngIf="item.detailsPrices != '-'">
-                    <td>Preturi</td>
-                    <td>{{item.detailsPrices}}</td>
-                </tr>
-                <tr>
-                    <td>Utilizare</td>
-                    <td>{{item.purpose}}</td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-
-</ng-template>
-<ng-template #mobileBlock>
-    <div class="container-produs">
-        <div>
-
-            <div class="big-image">
-                <img src="{{selectedImage}}" alt="selectedImg">
-            </div>
-
-
 
             <div class="small-images-big-container">
                 <div *ngFor="let img of images" (click)="onSelect(img)" class="small-img-containers"
                      [class.selected]="img === selectedImage">
                     <div *ngIf="img === selectedImage; then thenBlock else elseBlock"></div>
-                    <ng-template #thenBlock><img src="{{img}}" class="small-img small-selected-img"></ng-template>
-                    <ng-template #elseBlock><img src="{{img}}" class="small-img"></ng-template>
+                    <ng-template #thenBlock><img src="{{img}}" class="small-img small-selected-img" alt="produs selectat"></ng-template>
+                    <ng-template #elseBlock><img src="{{img}}" class="small-img" alt="produs neselectat"></ng-template>
                 </div>
-            </div>
-
-            <div class="container-title-description-price">
-                <h3>{{item.name}}</h3>
-                <hr style="border-top: 3px solid #D3D3D3;">
-                <p>{{item.description}}</p>
-                <p class="item-price">{{getDecimalPart()}}<sup>{{getFloatingPart()}}</sup> lei/ml</p>
-                <a href="tel:+40726841448" type="button" class="btn btn-primary call-now-button">Suna acum!</a>
-                <hr style="border-top: 3px solid #D3D3D3;">
             </div>
 
             <div>
                 <table class="content-table">
                     <thead>
-                    <th>Detalii</th>
-                    <th></th>
+                        <th colspan="2">Detalii</th>
                     </thead>
                     <tbody>
                     <tr *ngIf="item.height != '-'">
@@ -139,11 +72,72 @@
                     </tbody>
                 </table>
             </div>
-
         </div>
-    </div>
 
-</ng-template>
+    </ng-template>
+    <ng-template #mobileBlock>
+        <div class="container-produs">
+            <div>
 
+                <div class="big-image">
+                    <img src="{{selectedImage}}" alt="selectedImg">
+                </div>
 
+                <div class="small-images-big-container">
+                    <div *ngFor="let img of images" (click)="onSelect(img)" class="small-img-containers"
+                         [class.selected]="img === selectedImage">
+                        <div *ngIf="img === selectedImage; then thenBlock else elseBlock"></div>
+                        <ng-template #thenBlock><img src="{{img}}" class="small-img small-selected-img" alt="produs selectat"></ng-template>
+                        <ng-template #elseBlock><img src="{{img}}" class="small-img" alt="produs neselectat"></ng-template>
+                    </div>
+                </div>
+
+                <div class="container-title-description-price">
+                    <h3>{{item.name}}</h3>
+                    <hr>
+                    <p>{{item.description}}</p>
+                    <p class="item-price">{{getDecimalPart()}}<sup>{{getFloatingPart()}}</sup> lei/ml</p>
+                    <a href="tel:+40726841448" type="button" class="btn btn-primary call-now-button">Suna acum!</a>
+                    <hr>
+                </div>
+
+                <div>
+                    <table class="content-table">
+                        <thead>
+                        <th>Detalii</th>
+                        <th></th>
+                        </thead>
+                        <tbody>
+                        <tr *ngIf="item.height != '-'">
+                            <td>Inaltime</td>
+                            <td>{{item.height}}</td>
+                        </tr>
+                        <tr *ngIf="item.thickness != '-'">
+                            <td>Grosime</td>
+                            <td>{{item.thickness}}</td>
+                        </tr>
+                        <tr *ngIf="item.width != '-'">
+                            <td>Latime</td>
+                            <td>{{item.width}}</td>
+                        </tr>
+                        <tr *ngIf="item.length != '-'">
+                            <td>Lungime</td>
+                            <td>{{item.length}}</td>
+                        </tr>
+                        <tr *ngIf="item.detailsPrices != '-'">
+                            <td>Preturi</td>
+                            <td>{{item.detailsPrices}}</td>
+                        </tr>
+                        <tr>
+                            <td>Utilizare</td>
+                            <td>{{item.purpose}}</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+
+    </ng-template>
 </body>

@@ -49,6 +49,9 @@
 .phone-icon{
     width: 20px;
 }
+.phone-number{
+    color: #0082E6;
+}
 
 .location-title {
     font-weight: 300;

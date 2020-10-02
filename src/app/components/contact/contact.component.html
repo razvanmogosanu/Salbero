@@ -1,107 +1,85 @@
-<div *ngIf="screenWidth > 768; then desktopBlock else mobileBlock"></div>
-<ng-template #desktopBlock>
-    <div class="container">
-        <div class="row">
-            <div class="container-infos">
-                <img class="logo-phone" src="../../../assets/logo-phone.png">
-                <h2 class="title-info">Contacteaza-ne</h2>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="salbero, informatii, contact, gard, relatii, cu, clientii, numar, telefon, gorj
+                                   fantana arteziana, boltari, targu jiu, borduri, pavele, copacioasa, scoarta"/>
+    <meta name="description" content="Contacteaza-ne pentru mai multe informatii si comenzi la numerele de telefon:
+                                      0729 352 586 si 0729 333 207 sau la adresa de email salbero_srl@yahoo.com">
+    <meta name="author" content="Salbero S.R.L.">
+    <title>Contact | Salbero - Producator garduri, boltari, fantani arteziene, pavele si alte prefabricate din beton </title>
+</head>
 
-                <img class="phone-icon" src="../../../assets/phone.png">
-                <a href="tel:+40729333207" style=" color: #0082E6;">+40 729 333 207</a>
-                <p></p>
-                <img class="phone-icon" src="../../../assets/phone.png">
-                <a href="tel:+40729352586" style=" color: #0082E6;">+40 729 352 586</a>
-                <p></p>
-                <a href="mailto:salbero_srl@yahoo.com" class="contact-email">salbero_srl@yahoo.com</a>
-            </div>
+<body>
+    <div *ngIf="screenWidth > 768; then desktopBlock else mobileBlock"></div>
+    <ng-template #desktopBlock>
+        <div class="container">
+            <div class="row">
+                <div class="container-infos">
+                    <img class="logo-phone" src="../../../assets/logo-phone.png" alt="telefon">
+                    <h2 class="title-info">Contacteaza-ne</h2>
 
-            <div class="container-infos">
-                <img class="logo-location" src="../../../assets/logo-location.png">
+                    <img class="phone-icon" src="../../../assets/phone.png" alt="telefon">
+                    <a href="tel:+40729333207" class="phone-number">+40 729 333 207</a>
+                    <p></p>
+                    <img class="phone-icon" src="../../../assets/phone.png" alt="telefon">
+                    <a href="tel:+40729352586" class="phone-number">+40 729 352 586</a>
+                    <p></p>
+                    <a href="mailto:salbero_srl@yahoo.com" class="contact-email">salbero_srl@yahoo.com</a>
+                </div>
 
-                <h2 class="title-info">Viziteaza-ne</h2>
-                <p class="location-title">Salbero Copacioasa</p>
-                <address> DN67, Copăcioasa, nr 40</address>
-                <p class="location-title">Salbero Targu-Jiu</p>
-                <address> Strada Lotrului, Târgu Jiu</address>
-            </div>
+                <div class="container-infos">
+                    <img class="logo-location" src="../../../assets/logo-location.png" alt="locatie">
 
-            <div class="container-infos">
-                <img class="logo-clock" src="../../../assets/logo-clock.png">
-                <h2 class="title-info">Program</h2>
-                <p>Luni-Vineri: 8:00 - 17:00</p>
-                <p>Sâmbătă: 8:00 - 13:00</p>
-            </div>
-        </div>
-    </div>
+                    <h2 class="title-info">Viziteaza-ne</h2>
+                    <p class="location-title">Salbero Copacioasa</p>
+                    <address> DN67, Copăcioasa, nr 40</address>
+                    <p class="location-title">Salbero Targu-Jiu</p>
+                    <address> Strada Lotrului, Târgu Jiu</address>
+                </div>
 
-</ng-template>
-<ng-template #mobileBlock>
-    <div class="container">
-        <div class="row">
-            <div class="container-infos">
-                <img class="logo-phone" src="../../../assets/logo-phone.png">
-                <h2 class="title-info">Contacteaza-ne</h2>
-
-                <p>+40 729 333 207</p>
-                <p>+40 729 352 586</p>
-                <p class="contact-email">salbero_srl@yahoo.com</p>
-            </div>
-
-            <div class="container-infos-2">
-                <img class="logo-location" src="../../../assets/logo-location.png">
-
-                <h2 class="title-info">Viziteaza-ne</h2>
-                <p class="location-title">Salbero Copacioasa</p>
-                <address> DN67, Copăcioasa, nr 40</address>
-                <p class="location-title">Salbero Targu-Jiu</p>
-                <address> Strada Lotrului, Târgu Jiu</address>
-            </div>
-
-            <div class="container-infos-3">
-                <img class="logo-clock" src="../../../assets/logo-clock.png">
-
-            </div>
-            <div class="container-infos3" style="margin-left: 30%">
-                <h2 class="title-info">Program</h2>
-                <p>Luni-Vineri: 8:00 - 17:00</p>
-                <p>Sâmbătă: 8:00 - 13:00</p>
+                <div class="container-infos">
+                    <img class="logo-clock" src="../../../assets/logo-clock.png" alt="program de lucru">
+                    <h2 class="title-info">Program</h2>
+                    <p>Luni-Vineri: 8:00 - 17:00</p>
+                    <p>Sâmbătă: 8:00 - 13:00</p>
+                </div>
             </div>
         </div>
 
-    </div>
+    </ng-template>
+    <ng-template #mobileBlock>
+        <div class="container">
+            <div class="row">
+                <div class="container-infos">
+                    <img class="logo-phone" src="../../../assets/logo-phone.png" alt="telefon">
+                    <h2 class="title-info">Contacteaza-ne</h2>
 
-</ng-template>
+                    <p>+40 729 333 207</p>
+                    <p>+40 729 352 586</p>
+                    <p class="contact-email">salbero_srl@yahoo.com</p>
+                </div>
 
+                <div class="container-infos-2">
+                    <img class="logo-location" src="../../../assets/logo-location.png" alt="locatie">
 
-<!--cam asa era contactul -->
+                    <h2 class="title-info">Viziteaza-ne</h2>
+                    <p class="location-title">Salbero Copacioasa</p>
+                    <address> DN67, Copăcioasa, nr 40</address>
+                    <p class="location-title">Salbero Targu-Jiu</p>
+                    <address> Strada Lotrului, Târgu Jiu</address>
+                </div>
 
+                <div class="container-infos-3">
+                    <img class="logo-clock" src="../../../assets/logo-clock.png" alt="program de lucru">
+                </div>
 
-<!--<script src="/src/app/components/contact/server.js"></script>-->
+                <div class="container-infos-3">
+                    <h2 class="title-info">Program</h2>
+                    <p>Luni-Vineri: 8:00 - 17:00</p>
+                    <p>Sâmbătă: 8:00 - 13:00</p>
+                </div>
+            </div>
+        </div>
 
-<!--<body>-->
-<!--<div class="container">-->
-<!--    <div style="text-align:center">-->
-<!--        <h2>Contacteaza-ne</h2>-->
-<!--        <p>Cere o oferta personalizata!</p>-->
-<!--    </div>-->
-<!--    <div style="margin-right: 15%; margin-left: 15%">-->
-<!--        <form action="" >-->
-<!--            <label for="fname">Nume</label>-->
-<!--            <input type="text" id="fname" name="firstname" placeholder="Numele tau..">-->
-<!--            <label for="lname">Prenume</label>-->
-<!--            <input type="text" id="lname" name="lastname" placeholder="Prenumele tau..">-->
-<!--            <label for="lname">Oras</label>-->
-<!--            <input type="text" id="town" placeholder="Orasul tau..">-->
-<!--            <label for="lname">Telefon</label>-->
-<!--            <input type="text" id="phone" name="lastname" required placeholder="Telefonul tau..">-->
-
-<!--            <label for="subject">Subiect</label>-->
-<!--            <textarea id="subject" name="subject" placeholder="Scrie ceva..." style="height:170px"></textarea>-->
-<!--            <div class="text-center" id="btn-submit">-->
-<!--                <input class="submit-button" style="background: dodgerblue" type="submit" value="Trimite">-->
-<!--            </div>-->
-<!--        </form>-->
-<!--    </div>-->
-<!--</div>-->
-
-<!--</body>-->
+    </ng-template>
+</body>
