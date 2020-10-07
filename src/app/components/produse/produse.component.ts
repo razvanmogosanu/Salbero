@@ -19,13 +19,19 @@ export class ProduseComponent implements OnInit {
     resolveProducts() {
         this.produse = [];
         let theme = this.service.getLink();
+        console.log(theme + ' ');
         if (theme === 'produse') {
             this.produse = listaProduse;
         } else {
             theme = theme.toLowerCase();
+            let searchedWords: string[];
+            searchedWords = theme.split(' ');
             for (const entry of listaProduse) {
-                if (entry.name.toLowerCase().includes(theme)) {
-                    this.produse.push(entry);
+                for (const word of searchedWords){
+                    if (entry.tags.includes(word)) {
+                        this.produse.push(entry);
+                        break;
+                    }
                 }
             }
 

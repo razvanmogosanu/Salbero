@@ -15,7 +15,7 @@ export const listaProduse: Produs[] = [
         price: '132.50',
         purpose: 'Casă și Grădină',
         priceUnitMeasure: 'Lei / ml',
-        tags: ['gard', 'garduri', 'placi', 'beton', 'gard de beton', 'armat', '3D', 'ondulat', 'valuri'],
+        tags: ['gard', 'garduri', 'placi', 'beton', 'armat', '3D', 'ondulat', 'valuri'],
     },
 
     {
@@ -117,7 +117,7 @@ export const listaProduse: Produs[] = [
         price: '2.30',
         purpose: 'Zidărie',
         priceUnitMeasure: 'Lei / buc',
-        tags: ['boltari', 'beton', 'de', 'din'],
+        tags: ['boltari', 'boltar'],
     },
 
     {
@@ -134,7 +134,7 @@ export const listaProduse: Produs[] = [
         price: '12',
         purpose: 'Accesoriu gard',
         priceUnitMeasure: 'Lei / buc',
-        tags: ['capace', 'stalp', 'gard', 'neted', 'palarii', 'caciuli', 'palarie', 'caciula', 'rosu', 'gri']
+        tags: ['capace', 'capac', 'stalp', 'gard', 'neted', 'palarii', 'caciuli', 'palarie', 'caciula', 'rosu', 'gri']
     },
 
     {
@@ -151,7 +151,7 @@ export const listaProduse: Produs[] = [
         price: '18',
         purpose: 'Accesoriu gard',
         priceUnitMeasure: 'Lei / buc',
-        tags: ['capace', 'stalp', 'gard', 'bob', 'palarii', 'caciuli', 'palarie', 'caciula', 'rosu', 'gri']
+        tags: ['capace', 'capac', 'stalp', 'gard', 'bob', 'palarii', 'caciuli', 'palarie', 'caciula', 'rosu', 'gri']
     },
 
     {
@@ -168,7 +168,7 @@ export const listaProduse: Produs[] = [
         price: '16',
         purpose: 'Accesoriu gard',
         priceUnitMeasure: 'Lei / buc',
-        tags: ['capace', 'stalp', 'gard', 'floare', 'palarii', 'caciuli', 'palarie', 'caciula', 'rosu', 'gri']
+        tags: ['capace', 'capac', 'stalp', 'gard', 'floare', 'palarii', 'caciuli', 'palarie', 'caciula', 'rosu', 'gri']
     },
 
     {
@@ -185,7 +185,7 @@ export const listaProduse: Produs[] = [
         price: '16',
         purpose: 'Accesoriu gard',
         priceUnitMeasure: 'Lei / buc',
-        tags: ['capace', 'stalp', 'gard', 'ascutit', 'palarii', 'caciuli', 'palarie', 'caciula', 'rosu', 'gri']
+        tags: ['capace', 'capac', 'stalp', 'gard', 'ascutit', 'palarii', 'caciuli', 'palarie', 'caciula', 'rosu', 'gri']
     },
 
     {
@@ -203,7 +203,7 @@ export const listaProduse: Produs[] = [
         price: '12',
         purpose: 'Accesoriu gard',
         priceUnitMeasure: 'Lei / buc',
-        tags: ['capace', 'stalp', 'gard', 'neted', 'palarii', 'caciuli', 'palarie', 'caciula', 'coama', 'coame', 'rosie', 'gri']
+        tags: ['capace', 'capac', 'stalp', 'gard', 'neted', 'palarii', 'caciuli', 'palarie', 'caciula', 'coama', 'coame', 'rosie', 'gri']
     },
 
     {
@@ -220,7 +220,7 @@ export const listaProduse: Produs[] = [
         price: '15',
         purpose: 'Accesoriu gard',
         priceUnitMeasure: 'Lei / buc',
-        tags: ['capace', 'stalp', 'gard', 'bob', 'palarii', 'caciuli', 'palarie', 'caciula', 'coama', 'coame', 'rosie', 'gri']
+        tags: ['capace', 'capac', 'stalp', 'gard', 'bob', 'palarii', 'caciuli', 'palarie', 'caciula', 'coama', 'coame', 'rosie', 'gri']
     },
 
     {
@@ -237,7 +237,7 @@ export const listaProduse: Produs[] = [
         price: '35',
         purpose: 'Accesoriu gard',
         priceUnitMeasure: 'Lei / buc',
-        tags: ['capace', 'de', 'stalp', 'gard', 'lunga', 'palarii', 'caciuli', 'palarie', 'caciula', 'coama', 'coame', 'gri']
+        tags: ['capace', 'capac', 'stalp', 'gard', 'lunga', 'palarii', 'caciuli', 'palarie', 'caciula', 'coama', 'coame', 'gri']
     },
 
     {
@@ -254,7 +254,7 @@ export const listaProduse: Produs[] = [
         price: '900',
         purpose: 'Grădină',
         priceUnitMeasure: 'Lei',
-        tags: ['fantana', 'arteziana', 'fantani', 'artziene', 'de decor', 'gradina'],
+        tags: ['fantana', 'arteziana', 'fantani', 'arteziene', 'de decor', 'gradina'],
     },
 
     {
@@ -271,7 +271,7 @@ export const listaProduse: Produs[] = [
         price: '2.500',
         purpose: 'Grădină',
         priceUnitMeasure: 'Lei',
-        tags: ['fantana', 'arteziana', 'fantani', 'artziene', 'de decor', 'gradina'],
+        tags: ['fantana', 'arteziana', 'fantani', 'arteziene', 'de decor', 'gradina'],
     },
 
     {
@@ -372,7 +372,7 @@ export const listaProduse: Produs[] = [
         price: '25',
         purpose: 'Vie / Stalpi',
         priceUnitMeasure: 'Lei / buc',
-        tags: ['spalieri', 'stalpi', 'gard', 'vie', 'de', 'pentru', 'vita de vie']
+        tags: ['spalieri', 'spalier', 'stalpi', 'gard', 'vie', 'pentru', 'vita de vie']
     },
 
     {
@@ -388,7 +388,7 @@ export const listaProduse: Produs[] = [
         price: '35',
         purpose: 'Casă',
         priceUnitMeasure: 'Lei / buc',
-        tags: ['piatra', 'decorativa', 'pietre', 'decorative', 'soclu', 'casa', 'pentru', 'de', 'z']
+        tags: ['piatra', 'decorativa', 'pietre', 'decorative', 'soclu', 'casa', 'pentru', 'z']
     },
 
     {
