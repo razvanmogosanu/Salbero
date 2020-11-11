@@ -10,76 +10,46 @@
 </head>
 
 <body>
-    <div *ngIf="screenWidth > 768; then desktopBlock else mobileBlock"></div>
-    <ng-template #desktopBlock>
-        <div class="container">
-            <div class="row">
-                <div class="container-infos">
-                    <img class="logo-phone" src="../../../assets/logo-phone.png" alt="telefon">
-                    <h2 class="title-info">Contacteaza-ne</h2>
+    <div class="container">
+        <div class="row">
 
-                    <img class="phone-icon" src="../../../assets/phone.png" alt="telefon">
-                    <a href="tel:+40729333207" class="phone-number">+40 729 333 207</a>
-                    <p></p>
-                    <img class="phone-icon" src="../../../assets/phone.png" alt="telefon">
-                    <a href="tel:+40729352586" class="phone-number">+40 729 352 586</a>
-                    <p></p>
-                    <a href="mailto:salbero_srl@yahoo.com" class="contact-email">salbero_srl@yahoo.com</a>
-                </div>
+            <!-- Contacteaza-ne -->
+            <div class="col-md-4 col-xs-6">
+                <img class="col-icon" src="../../../assets/logo-phone.png" alt="telefon">
+                <h2>Contactează-ne</h2>
 
-                <div class="container-infos">
-                    <img class="logo-location" src="../../../assets/logo-location.png" alt="locatie">
+                <p class="find-us-paragraph">
+                    <i class="fa fa-phone"></i>
+                    <a class="contact" href="tel:+40729333207">+40 729 333 207</a>
+                </p>
+                <p class="find-us-paragraph">
+                    <i class="fa fa-phone"></i>
+                    <a class="contact" href="tel:+40729352586">+40 729 352 586</a>
+                </p>
+                <p class="find-us-paragraph">
+                    <i class="fa fa-envelope"></i>
+                    <a class="contact" href="mailto:salbero_srl@yahoo.com">salbero_srl@yahoo.com</a>
+                </p>
+            </div>
 
-                    <h2 class="title-info">Viziteaza-ne</h2>
-                    <p class="location-title">Salbero Copacioasa</p>
-                    <address> DN67, Copăcioasa, nr 40</address>
-                    <p class="location-title">Salbero Targu-Jiu</p>
-                    <address> Strada Lotrului, Târgu Jiu</address>
-                </div>
+            <!-- Viziteaza-ne -->
+            <div class="col-md-4 col-xs-6">
+                <img class="col-icon" src="../../../assets/logo-location.png" alt="locatie">
+                <h2>Vizitează-ne</h2>
 
-                <div class="container-infos">
-                    <img class="logo-clock" src="../../../assets/logo-clock.png" alt="program de lucru">
-                    <h2 class="title-info">Program</h2>
-                    <p>Luni-Vineri: 8:00 - 17:00</p>
-                    <p>Sâmbătă: 8:00 - 13:00</p>
-                </div>
+                <p class="find-us-paragraph place">Salbero Copăcioasa</p>
+                <address> nr. 40, Copăcioasa, loc. Scoarța</address>
+                <p  class="find-us-paragraph place">Salbero Târgu-Jiu</p>
+                <address> Strada Lotrului, Târgu Jiu</address>
+            </div>
+
+            <!-- Program -->
+            <div class="col-md-4 col-xs-6">
+                <img class="col-icon" src="../../../assets/logo-clock.png" alt="program de lucru">
+                <h2>Program</h2>
+                <p class="find-us-paragraph">Luni-Vineri: 8:00 - 17:00</p>
+                <p class="find-us-paragraph">Sâmbătă: 8:00 - 13:00</p>
             </div>
         </div>
-
-    </ng-template>
-    <ng-template #mobileBlock>
-        <div class="container">
-            <div class="row">
-                <div class="container-infos">
-                    <img class="logo-phone" src="../../../assets/logo-phone.png" alt="telefon">
-                    <h2 class="title-info">Contacteaza-ne</h2>
-
-                    <p>+40 729 333 207</p>
-                    <p>+40 729 352 586</p>
-                    <p class="contact-email">salbero_srl@yahoo.com</p>
-                </div>
-
-                <div class="container-infos-2">
-                    <img class="logo-location" src="../../../assets/logo-location.png" alt="locatie">
-
-                    <h2 class="title-info">Viziteaza-ne</h2>
-                    <p class="location-title">Salbero Copacioasa</p>
-                    <address> DN67, Copăcioasa, nr 40</address>
-                    <p class="location-title">Salbero Targu-Jiu</p>
-                    <address> Strada Lotrului, Târgu Jiu</address>
-                </div>
-
-                <div class="container-infos-3">
-                    <img class="logo-clock" src="../../../assets/logo-clock.png" alt="program de lucru">
-                </div>
-
-                <div class="container-infos-3">
-                    <h2 class="title-info">Program</h2>
-                    <p>Luni-Vineri: 8:00 - 17:00</p>
-                    <p>Sâmbătă: 8:00 - 13:00</p>
-                </div>
-            </div>
-        </div>
-
-    </ng-template>
+    </div>
 </body>

@@ -20,12 +20,16 @@
 }
 
 .cine-suntem-img-1 {
+    padding-top: 50px;
     margin-left: 5%;
+    height: 100%;
 }
 
 .cine-suntem-img-2 {
-    width: 30%;
-    height: 30%;
+    padding-top: 30px;
+    margin-left: 5%;
+    width: 25%;
+    height: 25%;
 }
 
 .cine-suntem-txt-1 {
